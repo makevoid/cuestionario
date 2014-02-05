@@ -1,0 +1,3 @@
+haml views/index.haml --trace >  index.html
+
+ruby ~/Sites/fiveserv/lib/fivetastic.rb deploy
