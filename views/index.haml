@@ -1,0 +1,143 @@
+:css
+  input {
+    display: block;
+    margin-bottom: 10px
+  }
+
+:ruby
+  # aliases
+  def write; haml_concat; end
+  def haml_tag; tag; end
+
+  def input_text(label)
+    tag :input
+  end
+
+  def select(label, choices)
+    tag :select do
+      choices.each do |choice|
+        tag :option do
+          write choice
+        end
+      end
+    end
+  end
+
+  def input(label, choices)
+    tag :label do
+      write label
+      if choices
+        select label, choices
+      else
+        input_text label
+      end
+    end
+  end
+
+
+%h1 Cuestionario para participantes en actividades URBAL
+
+
+%section
+  %h1 1. Informaciones sobre usted (la persona que responde al cuestionario)
+  - input "Nombre y apellido (opcional)"
+  - input "Edad"
+  - input "Sexo"
+  - input "Lugar de residencia"
+  - input "Municipio"
+  - input "Provincia"
+  - input "País"
+  - input "Profesión"
+  - input "Instrucción", %w(primaria secundaria universitaria)
+  - input "Otra instrucción (especificar)"
+
+
+%section
+  %h1 2. Información sobre el Proyecto URBAL III en el cual usted ha participado
+
+  - input "a. Nombre del Proyecto"
+  (F>  aparece listado 20 pr + OCO) ?
+  %ul
+    %li pr1
+    %li pr2
+    %li pr3
+    %li pr4
+    %li pr5
+    %li ...
+  oppure:
+  - input "a. Nombre del Proyecto", %w(pr1 pr2 pr3 pr4 pr5 ...)
+
+  %hr
+
+  - input "b. Socio del Proyecto con el cual usted ha participado"
+  (F> para cada proyecto aparece lista socios)
+  - input "c. Función al tiempo en el cual participó en el proyecto"
+  (F> aparece lista funciones)
+  - input "d. Actividades en las cuales ha participado"
+  (F> aparece listado de actividades desarrolladas por el proyecto)
+
+
+
+
+
+
+%section
+  %h1 3a. Apreciación respecto a la cocepción del proyecto
+
+  - input "Como considera usted que las actividades de (F> aparece actividad-es anteriormente seleccionada-s)  respondieron a las necesidades/prioridades de la población beneficaria del municipio/provincia donde se realizaron?", %w(mucho bastante poco nada)
+
+  - input "Si possible podría indicar poqué usted considera qua las actividades del proyecto respondieron (F> aparece la opción escogida) a las necesidades/prioridades de la población beneficaria?"
+
+%section
+  %h1 3b. Apreciación respecto a la ejecución del proyecto
+
+  Considera usted que la organización para la realización de las actividades del proyecto
+  (F> aparece nombre proyecto) fue?
+  bien planificada
+  mejorable
+  insuficiente
+  inadecuada
+
+  si possible podría indicar poqué usted considera qua la organizacion del proyecto fue (F> aparece la opción escogida)
+  ……………………………………………………………………………………………………………………………….
+
+
+  Considera usted que los medios puestos a disposición para la realización de las actividades del proyecto (F> aparece nombre proyecto) fueron?
+  abundantes
+  adecuados
+  insuficientes
+  muy escasos
+
+  si possible podría indicar poqué usted considera que los medios puestos a disposición fueron (F> aparece la opción escogida)
+  ……………………………………………………………………………………………………………………………….
+
+
+
+
+%section
+  %h1 4. Apreciación respecto a los efectos del proyecto
+
+  Como considera usted que las actividades de (F> aparece actividad-es anteriormente seleccionada-s)  en la cuales usted ha participado contribuyenron al logro del Objetivo Especifico del Proyecto (F> aparece nombre del proyecto) que era de (F> aparece enunciación del objetivo)?
+
+  alto
+  parcial
+  poco
+  nada
+
+  si possible podría indicar poqué usted considera que el nivel de contribución al Objetivo especifico fué (F> aparece la opción escogida)
+  ……………………………………………………………………………………………………………………………….
+
+%section
+  %h1 5. Apreciación respecto a la durabilidad de los efectos del proyecto
+
+  Considera usted que los efectos esperados de (F> aparece enunciación del objetivo) se están manteniendo también en la actualidad, o se ha perdido depsués de la finalización del Proyecto (F> aparece nombre proyecto)?
+
+  persisten totalmente
+  persisten parcialmente
+  se han perdido en mayoría
+  se han perdido totalmente
+
+  si possible podría indicar poqué usted considera que los efectos del Proyecto (F> aparece la opción escogida)
+  ……………………………………………………………………………………………………………………………….
+
+

@@ -1,0 +1,1 @@
+haml views/index.haml > index.html
