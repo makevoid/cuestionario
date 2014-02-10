@@ -1,0 +1,53 @@
+body {
+  margin: 0; }
+
+body {
+  font-family: Helvetica, Arial, Verdana;
+  font-size: 120%;
+  color: #222222; }
+
+input, select, textarea {
+  font-size: 1.2em;
+  display: block; }
+
+textarea {
+  width: 80%; }
+
+select {
+  font-size: 1em; }
+
+input, select {
+  margin-bottom: 0.8em; }
+
+body {
+  background: #e0fcff;
+  position: relative; }
+
+body > h1 {
+  background: #385f93;
+  color: white;
+  border-top: 2px solid #2a476e;
+  border-bottom: 2px solid #2a476e;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 2%;
+  padding-right: 2%;
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0; }
+
+body > section {
+  width: 96%;
+  margin: 0 auto; }
+
+body > section > h1 {
+  background: #6a92c7;
+  color: white;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 1%;
+  padding-right: 1%;
+  border: 1px solid #2a476e;
+  text-shadow: 0 -1px 0 #385f93;
+  box-shadow: 0 1px 0 1px #8fadd5 inset; }

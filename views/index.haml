@@ -3,31 +3,21 @@
   %head
     %meta{ charset: :utf8 }
   %body
-    :css
-      body {
-        font-size: 120%;
-      }
-
-      input, select {
-        font-size: 1.2em;
-        display: block;
-        margin-bottom: 20px
-      }
-      select {
-        font-size: 1em;
-      }
-
-
-
+    %title Cuestionario
+    %link{ href: "css/main.css", rel: "stylesheet" }
     :ruby
       alias :write  :haml_concat
       alias :tag    :haml_tag
 
-      def input_text(label)
+      def input_text(label, options)
         tag :input
       end
+      
+      def textarea(label, options)
+        tag :textarea
+      end
 
-      def select(label, choices)
+      def select(label, choices, options)
         tag :select do
           choices.each do |choice|
             tag :option do
@@ -37,18 +27,22 @@
         end
       end
 
-      def input(label, choices=nil)
+      def input(label, options={}, options2={})
         tag :label do
           write label
-          if choices
-            select label, choices
+          if options.is_a? Array
+              select label, options, options2
+          elsif options[:tag] == :area
+            textarea label, options
           else
-            input_text label
+            input_text label, options
           end
         end
       end
 
-
+      # import datas
+      selects = eval(File.read "views/selects.rb")
+      
     %h1 Cuestionario para participantes en actividades URBAL
 
 
@@ -69,29 +63,17 @@
     %section
       %h1 2. Información sobre el Proyecto URBAL III en el cual usted ha participado
 
-      - input "a. Nombre del Proyecto"
-      (F>  aparece listado 20 pr + OCO) ?
-      %ul
-        %li pr1
-        %li pr2
-        %li pr3
-        %li pr4
-        %li pr5
-        %li ...
-      oppure:
-      - input "a. Nombre del Proyecto", %w(pr1 pr2 pr3 pr4 pr5 ...)
+      - input "a. Nombre del Proyecto", selects[:project_names]
 
-      %hr
-
-      - input "b. Socio del Proyecto con el cual usted ha participado"
-      (F> para cada proyecto aparece lista socios)
-      - input "c. Función al tiempo en el cual participó en el proyecto"
-      (F> aparece lista funciones)
+      - input "b. Socio del Proyecto con el cual usted ha participado", selects[:partners][0], name: ""
+      
+      - input "c. Función al tiempo en el cual participó en el proyecto", selects[:functions]
+      
       - input "d. Actividades en las cuales ha participado"
       (F> aparece listado de actividades desarrolladas por el proyecto)
 
 
-
+ 
 
 
 
@@ -100,7 +82,7 @@
 
       - input "Como considera usted que las actividades de (F> aparece actividad-es anteriormente seleccionada-s)  respondieron a las necesidades/prioridades de la población beneficaria del municipio/provincia donde se realizaron?", %w(mucho bastante poco nada)
 
-      - input "Si possible podría indicar poqué usted considera qua las actividades del proyecto respondieron (F> aparece la opción escogida) a las necesidades/prioridades de la población beneficaria?"
+      - input "Si possible podría indicar poqué usted considera qua las actividades del proyecto respondieron (F> aparece la opción escogida) a las necesidades/prioridades de la población beneficaria?", tag: :area
 
     %section
       %h1 3b. Apreciación respecto a la ejecución del proyecto
@@ -111,7 +93,7 @@
 
       - input "Considera usted que los medios puestos a disposición para la realización de las actividades del proyecto (F> aparece nombre proyecto) fueron?", ["abundantes", "adecuados", "insuficientes", "muy escasos"]
 
-      - input "Si possible podría indicar poqué usted considera que los medios puestos a disposición fueron (F> aparece la opción escogida)"
+      - input "Si possible podría indicar poqué usted considera que los medios puestos a disposición fueron (F> aparece la opción escogida)", tag: :area
 
 
     %section
@@ -119,7 +101,7 @@
 
       - input "Como considera usted que las actividades de (F> aparece actividad-es anteriormente seleccionada-s)  en la cuales usted ha participado contribuyenron al logro del Objetivo Especifico del Proyecto (F> aparece nombre del proyecto) que era de (F> aparece enunciación del objetivo)?", %w(alto parcial poco nada)
 
-      - input "Si possible podría indicar poqué usted considera que el nivel de contribución al Objetivo especifico fué (F> aparece la opción escogida)"
+      - input "Si possible podría indicar poqué usted considera que el nivel de contribución al Objetivo especifico fué (F> aparece la opción escogida)", tag: :area
 
 
     %section
@@ -127,6 +109,6 @@
 
       - input "Considera usted que los efectos esperados de (F> aparece enunciación del objetivo) se están manteniendo también en la actualidad, o se ha perdido depsués de la finalización del Proyecto (F> aparece nombre proyecto)?", ["persisten totalmente", "persisten parcialmente", "se han perdido en mayoría", "se han perdido totalmente"]
 
-      - input "Si possible podría indicar poqué usted considera que los efectos del Proyecto (F> aparece la opción escogida)"
+      - input "Si possible podría indicar poqué usted considera que los efectos del Proyecto (F> aparece la opción escogida)", tag: :area
 
 

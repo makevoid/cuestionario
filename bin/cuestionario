@@ -1,1 +1,6 @@
-haml views/index.haml > index.html
+guard
+
+# original command:
+# haml views/index.haml > index.html
+# 
+# css was inline
