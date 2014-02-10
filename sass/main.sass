@@ -1,19 +1,19 @@
 =hpadding($pad)
   padding-left:   $pad
   padding-right:  $pad
-  
+
 =vpadding($pad)
   padding-top:    $pad
   padding-bottom: $pad
-  
+
 // resets
 
 body
-  margin: 0  
+  margin: 0
 
 // base style
 
-body 
+body
   font-family: Helvetica, Arial, Verdana
   font-size: 120%
   color: #222
@@ -21,20 +21,20 @@ body
 input, select, textarea
   font-size: 1.2em
   display: block
-  
+
 textarea
   width: 80%
 
 select
   font-size: 1em
-  
+
 // units and colors
-  
+
 $u: 0.2em
 $pu: 2%
 
 $blue:        #4677B8
-$light_blue:  #E0FCFF
+$light_blue:  #E4FBFF
 
 // forms
 
@@ -61,7 +61,7 @@ body > h1
 body > section
   width: 100% - $pu*2
   margin: 0 auto
-  
+
 
 body > section > h1
   background: lighten($blue, 10)
@@ -71,6 +71,6 @@ body > section > h1
   border: 1px solid darken($blue, 20%)
   text-shadow: 0 -1px 0 darken($blue, 10%)
   box-shadow: 0 1px 0 1px lighten($blue, 20%) inset
-  
+
 
 // ;|{|}  this is the regexp to convert css to sass via find & replace
