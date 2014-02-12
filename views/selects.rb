@@ -233,7 +233,26 @@ Diputación Provincial de Huelva (España)
 Región de Lombardia (Italia)},
 ]
 
-activities = []
+activities = [
+  
+"",
+
+%{Asistencia a 750 emprendedores turísticos para la adquisición de nuevas capacidades de atención al turista 
+Incorporación de170 prestadores de servicios turísticos no estatales para formar parte de la gestión integrada de la Ruta Camino Andino
+Puesta en valor 142 sitios turísticos
+Creación de 7 rutas turísticas específicas para conformar la  Ruta Camino Andino 
+Creación de 8 centros de acceso a nuevas tecnologías},
+
+%{Formación de 150 técnicos municipales en desarrollo económico 
+Formación de 150 emprendedores para elaborar sus planes de empresa
+Asistencia técnica a 440 emprendedores mediante atención personalizada. 
+Habilitación de 5 espacios en apoyo a la emprendeduría 
+Elaboración de un Documento marco de reflexión sobre emprendedurismo e innovación social,
+Desarrollo de una herramienta para la identificación online de buenas prácticas 
+Implementación de la Estrategia de Mercados Alternativos en La Paz. 
+Ralización de 8 acciones de mercado social.},
+
+]
 objectives = []
 
 partners    = partners.map{   |str| str_format str }
