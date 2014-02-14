@@ -3,6 +3,8 @@ $(function(){
   project_names = JSON.parse(project_names)
   partners = JSON.parse(partners)
   activities = JSON.parse(activities)
+  objectives = JSON.parse(objectives)
+
 
   project_name = document.querySelector("[name=project_name]")
   partners_cont = document.querySelector(".partners")
@@ -37,6 +39,12 @@ $(function(){
     // change activity
     activities_name = document.querySelector("[name=activities]")
     $(".activities").html(activities_name.value || "...")
+    // change objectives
+
+    console.log(name_idx)
+    console.log(objectives)
+    console.log(objectives[name_idx])
+    $(".objectives").html(objectives[name_idx] || "...")
   })
 
 

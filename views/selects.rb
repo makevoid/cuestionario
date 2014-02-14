@@ -256,7 +256,17 @@ Ralización de 8 acciones de mercado social.},
 
 ]
 
-objectives = []
+objectives = [
+
+"",
+
+"Conformar nuevos mecanismos de gestión para el desarrollo e implementación de un corredor turístico de integración de las zonas de frontera a través de las rutas prehispánicas y coloniales. Crear un corredor de etnoecoturismo aymara-quechua, como un destino turístico con identidad cultural",
+
+"Incrementar las capacidades de los gobiernos locales para apoyar y promover a los emprendedores con el fin de dinamizar el desarrollo económico local.  Desarrollar experiencias de capacitación y asistencia técnica que viabilicen la inversión productiva de emprendedores en los municipios locales a través de la valorización de las remesas provenientes de la población de migrantes de América Latina en Europa",
+
+"",
+
+]
 
 partners    = partners.map{   |str| str_format str }
 activities  = activities.map{ |str| str_format str }

@@ -1,7 +1,8 @@
 !!!
 %html
   %head
-    %meta{ charset: :utf8 }%title Cuestionario
+    %meta{ charset: :utf8 }
+    %title Cuestionario
     %link{ href: "css/main.css", rel: "stylesheet" }
     :ruby
       alias :write  :haml_concat
@@ -54,6 +55,8 @@
       project_names = #{JSON.generate(selects[:project_names]).inspect}
       partners = #{JSON.generate(selects[:partners]).inspect}
       activities = #{JSON.generate(selects[:activities]).inspect}
+      objectives = #{JSON.generate(selects[:objectives]).inspect}
+
     %script{ src: "js/main.js", type: "text/javascript" }
 
   %body
@@ -108,14 +111,14 @@
     %section
       %h1 4. Apreciación respecto a los efectos del proyecto
 
-      - input "Como considera usted que las actividades de #{strong_sel :activities}  en la cuales usted ha participado contribuyenron al logro del Objetivo Especifico del Proyecto #{strong_sel :project_names} que era de (F> aparece enunciación del objetivo)?", %w(alto parcial poco nada)
+      - input "Como considera usted que las actividades de #{strong_sel :activities}  en la cuales usted ha participado contribuyenron al logro del Objetivo Especifico del Proyecto #{strong_sel :project_names} que era de #{strong_sel :objectives}?", %w(alto parcial poco nada)
 
       - input "Si possible podría indicar poqué usted considera que el nivel de contribución al Objetivo especifico fué (F> aparece la opción escogida)", tag: :area
 
     %section
       %h1 5. Apreciación respecto a la durabilidad de los efectos del proyecto
 
-      - input "Considera usted que los efectos esperados de (F> aparece enunciación del objetivo) se están manteniendo también en la actualidad, o se ha perdido depsués de la finalización del Proyecto #{strong_sel :project_names}?", ["persisten totalmente", "persisten parcialmente", "se han perdido en mayoría", "se han perdido totalmente"]
+      - input "Considera usted que los efectos esperados de #{strong_sel :objectives} se están manteniendo también en la actualidad, o se ha perdido depsués de la finalización del Proyecto #{strong_sel :project_names}?", ["persisten totalmente", "persisten parcialmente", "se han perdido en mayoría", "se han perdido totalmente"]
 
       - input "Si possible podría indicar poqué usted considera que los efectos del Proyecto (F> aparece la opción escogida)", tag: :area
 
