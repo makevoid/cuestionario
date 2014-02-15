@@ -67,7 +67,7 @@
       %h1 1. Informaciones sobre usted (la persona que responde al cuestionario)
       - input "Nombre y apellido (opcional)"
       - input "Edad (años, en cifra)"
-      - input "Sexo", %w(M,F)
+      - input "Sexo", %w(M F)
       - input "Lugar de residencia"
       - input "Municipio"
       - input "Provincia"
@@ -93,19 +93,19 @@
     %section
       %h1 3. Apreciación respecto a la cocepción del Proyecto
 
-      - input "Participó usted en el diseño del Proyecto?", %w("si", "no")
-      
+      - input "Participó usted en el diseño del Proyecto?", %w( si no )
+
       - input "Señale de la siguiente lista que proceso o política de cohesión social fue impulsada en el margo del proyecto", name: :politicas
-      
+
       - input "Sabe usted si dicho proceso o política estaba ya priorizada en la institución participante", %w("priorizada", "no priorizada", "no sé")
-     
+
       - input "Como considera usted que las actividades de #{strong_sel :activities}  respondieron a las necesidades/prioridades de la población beneficaria del municipio/provincia donde se realizaron?", %w("muy apropriadamente", "aprpriadamente", "eran poco apropiadas", "sin ninguna relación")
 
       - input "De ser posible podría indicar poqué usted considera qua las actividades del proyecto respondieron (F> aparece la opción escogida) a las necesidades/prioridades de la población beneficaria?", tag: :area
 
       - input "Enumere otras actividades que usted consideraque devieron ser incluídas en el diseño del Proyecto para mejorar su impacto", tag: :area
-      
-     
+
+
      %section
       %h1 4. Apreciación respecto a la ejecución del Proyecto
 
