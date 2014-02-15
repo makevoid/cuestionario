@@ -24,8 +24,11 @@ $(function(){
 
   activities_cont = document.querySelector(".activities_cont")
   project_name.addEventListener("change", function(){
-    sel = document.querySelector("[name=activities]")
-    sel.remove()
+    // sel = document.querySelector("[name=activities]")
+    // sel.remove()
+    // doesn't works in chrome????
+    $("[name=activities]").remove()
+
     // append
     name_idx = _(project_names).indexOf(project_name.value)
     options = ""
@@ -41,10 +44,12 @@ $(function(){
     $(".activities").html(activities_name.value || "...")
     // change objectives
 
-    console.log(name_idx)
-    console.log(objectives)
-    console.log(objectives[name_idx])
+    // console.log(name_idx)
+    // console.log(objectives)
+    // console.log(objectives[name_idx])
     $(".objectives").html(objectives[name_idx] || "...")
+
+    //
   })
 
 
