@@ -95,15 +95,15 @@
 
       - input "Participó usted en el diseño del Proyecto?", %w( si no )
 
-      - input "Señale de la siguiente lista que proceso o política de cohesión social fue impulsada en el margo del proyecto", name: :politicas
+      - input "Señale de la siguiente lista que proceso o política de cohesión social fue impulsada en el marco del proyecto", name: :politicas
 
-      - input "Sabe usted si dicho proceso o política estaba ya priorizada en la institución participante", %w("priorizada", "no priorizada", "no sé")
+      - input "Sabe usted si dicho proceso o política estaba ya priorizada en la institución participante", %w("priorizada", "no priorizada", "no se")
 
       - input "Como considera usted que las actividades de #{strong_sel :activities}  respondieron a las necesidades/prioridades de la población beneficaria del municipio/provincia donde se realizaron?", %w("muy apropriadamente", "aprpriadamente", "eran poco apropiadas", "sin ninguna relación")
 
       - input "De ser posible podría indicar poqué usted considera qua las actividades del proyecto respondieron (F> aparece la opción escogida) a las necesidades/prioridades de la población beneficaria?", tag: :area
 
-      - input "Enumere otras actividades que usted consideraque devieron ser incluídas en el diseño del Proyecto para mejorar su impacto", tag: :area
+      - input "Enumere otras actividades que usted considera que devieron ser incluídas en el diseño del Proyecto para mejorar su impacto", tag: :area
 
 
     %section
@@ -122,7 +122,7 @@
 
       - input "Como considera usted que las actividades de #{strong_sel :activities}  en la cuales usted ha participado contribuyeron al logro del Objetivo Especifico del Proyecto #{strong_sel :project_names} que era de #{strong_sel :objectives}?", %w(mucho parcialmente poco nada)
 
-      - input "De ser posible podría indicar poqué usted considera que el nivel de contribución al Objetivo especifico fué (F> aparece la opción escogida)", tag: :area
+      - input "De ser posible podría indicar porqué usted considera que el nivel de contribución al Objetivo especifico fué (F> aparece la opción escogida)", tag: :area
 
     %section
       %h1 6. Apreciación respecto a la durabilidad de los efectos del Proyecto
@@ -131,5 +131,5 @@
 
       - input "De ser posible podría indicar poqué usted considera que los efectos del Proyecto (F> aparece la opción escogida)", tag: :area
 
-      - input "Conoce usted algún otro gobierno municipal o intermedio que haya adoptado un proceso o política como los impulsados por el Proyecto?", ["si", "no", "no sé"]
+      - input "Conoce usted algún otro gobierno municipal o intermedio que haya adoptado un proceso o política como los impulsados por el Proyecto?", ["si", "no", "no se"]
 
