@@ -61,13 +61,13 @@
 
   %body
 
-    %h1 Cuestionario para participantes en actividades URBAL
+    %h1 Cuestionario para participantes en actividades del Programa URB-AL III
 
     %section
       %h1 1. Informaciones sobre usted (la persona que responde al cuestionario)
       - input "Nombre y apellido (opcional)"
-      - input "Edad"
-      - input "Sexo"
+      - input "Edad (años, en cifra)"
+      - input "Sexo", %w(M,F)
       - input "Lugar de residencia"
       - input "Municipio"
       - input "Provincia"
@@ -77,49 +77,59 @@
       - input "Otra instrucción (especificar)"
 
     %section
-      %h1 2. Información sobre el Proyecto URBAL III en el cual usted ha participado
+      %h1 2. Información sobre el Proyecto URB-AL III en el cual usted ha participado
 
-      - input "a. Nombre del Proyecto", selects[:project_names], name: :project_name
+      - input "a. Nombre del Proyecto (elegir del listado a continuación)", selects[:project_names], name: :project_name
 
       .partners
-        - input "b. Socio del Proyecto con el cual usted ha participado", selects[:partners][0], name: :partners
+        - input "b. Socio del Proyecto con el cual usted ha participado (elegir del listado a continuación)", selects[:partners][0], name: :partners
 
-      - input "c. Función al tiempo en el cual participó en el proyecto", selects[:functions]
+      - input "c. Su Función al tiempo en el cual participó en el proyecto (elegir del listado a continuación)", selects[:functions]
 
       .activities_cont
-        - input "d. Actividades en las cuales ha participado" , selects[:activities][0], name: :activities
+        - input "d. Actividades del Proyecto en las cuales usted ha participado (elegir del listado a continuación)" , selects[:activities][0], name: :activities
 
 
     %section
-      %h1 3a. Apreciación respecto a la cocepción del proyecto
+      %h1 3. Apreciación respecto a la cocepción del Proyecto
 
-      - input "Como considera usted que las actividades de #{strong_sel :activities}  respondieron a las necesidades/prioridades de la población beneficaria del municipio/provincia donde se realizaron?", %w(mucho bastante poco nada)
+      - input "Participó usted en el diseño del Proyecto?", %w("si", "no")
+      
+      - input "Señale de la siguiente lista que proceso o política de cohesión social fue impulsada en el margo del proyecto", name: :politicas
+      
+      - input "Sabe usted si dicho proceso o política estaba ya priorizada en la institución participante", %w("priorizada", "no priorizada", "no sé")
+     
+      - input "Como considera usted que las actividades de #{strong_sel :activities}  respondieron a las necesidades/prioridades de la población beneficaria del municipio/provincia donde se realizaron?", %w("muy apropriadamente", "aprpriadamente", "eran poco apropiadas", "sin ninguna relación")
 
-      - input "Si possible podría indicar poqué usted considera qua las actividades del proyecto respondieron (F> aparece la opción escogida) a las necesidades/prioridades de la población beneficaria?", tag: :area
+      - input "De ser posible podría indicar poqué usted considera qua las actividades del proyecto respondieron (F> aparece la opción escogida) a las necesidades/prioridades de la población beneficaria?", tag: :area
 
-    %section
-      %h1 3b. Apreciación respecto a la ejecución del proyecto
+      - input "Enumere otras actividades que usted consideraque devieron ser incluídas en el diseño del Proyecto para mejorar su impacto", tag: :area
+      
+     
+     %section
+      %h1 4. Apreciación respecto a la ejecución del Proyecto
 
-      - input "Considera usted que la organización para la realización de las actividades del proyecto #{strong_sel :project_names} fue?", ["bien planificada", "mejorable", "insuficiente", "inadecuada"]
+      - input "Considera usted que la organización para la realización de las actividades del proyecto #{strong_sel :project_names} fue?", ["muy adecuada", "adecuada", "poco adecuada", "inadecuada"]
 
-      - input "Si possible podría indicar poqué usted considera qua la organizacion del proyecto fue (F> aparece la opción escogida)"
+      - input "De ser possible podría indicar poqué usted considera qua la organizacion del proyecto fue (F> aparece la opción escogida)"
 
       - input "Considera usted que los medios puestos a disposición para la realización de las actividades del proyecto #{strong_sel :project_names} fueron?", ["abundantes", "adecuados", "insuficientes", "muy escasos"]
 
-      - input "Si possible podría indicar poqué usted considera que los medios puestos a disposición fueron (F> aparece la opción escogida)", tag: :area
+      - input "De ser posible podría indicar poqué usted considera que los medios puestos a disposición fueron (F> aparece la opción escogida)", tag: :area
 
     %section
-      %h1 4. Apreciación respecto a los efectos del proyecto
+      %h1 5. Apreciación respecto a los efectos del Proyecto
 
-      - input "Como considera usted que las actividades de #{strong_sel :activities}  en la cuales usted ha participado contribuyenron al logro del Objetivo Especifico del Proyecto #{strong_sel :project_names} que era de #{strong_sel :objectives}?", %w(alto parcial poco nada)
+      - input "Como considera usted que las actividades de #{strong_sel :activities}  en la cuales usted ha participado contribuyeron al logro del Objetivo Especifico del Proyecto #{strong_sel :project_names} que era de #{strong_sel :objectives}?", %w(mucho parcialmente poco nada)
 
-      - input "Si possible podría indicar poqué usted considera que el nivel de contribución al Objetivo especifico fué (F> aparece la opción escogida)", tag: :area
+      - input "De ser posible podría indicar poqué usted considera que el nivel de contribución al Objetivo especifico fué (F> aparece la opción escogida)", tag: :area
 
     %section
-      %h1 5. Apreciación respecto a la durabilidad de los efectos del proyecto
+      %h1 6. Apreciación respecto a la durabilidad de los efectos del Proyecto
 
-      - input "Considera usted que los efectos esperados de #{strong_sel :objectives} se están manteniendo también en la actualidad, o se ha perdido depsués de la finalización del Proyecto #{strong_sel :project_names}?", ["persisten totalmente", "persisten parcialmente", "se han perdido en mayoría", "se han perdido totalmente"]
+      - input "Considera usted que los efectos esperados de #{strong_sel :objectives} se están manteniendo también en la actualidad, o se han perdido depsués de la finalización del Proyecto #{strong_sel :project_names}?", ["persisten totalmente", "persisten parcialmente", "se han perdido en mayoría", "se han perdido en mayoría"]
 
-      - input "Si possible podría indicar poqué usted considera que los efectos del Proyecto (F> aparece la opción escogida)", tag: :area
+      - input "De ser posible podría indicar poqué usted considera que los efectos del Proyecto (F> aparece la opción escogida)", tag: :area
 
+      - input "Conoce usted algún otro gobierno municipal o intermedio que haya adoptado un proceso o política como los impulsados por el Proyecto?, ["si", "no", "no sé"]
 
