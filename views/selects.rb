@@ -235,8 +235,6 @@ Región de Lombardia (Italia)},
 
 activities = [
 
-"",
-
 %{Todas las actividades del proyecto
 Asegurar la coordinación y el buen funcionamiento de los proyectos del Lote1
 Asegurar la coherencia de las acciones del Lote 1 entre sí y con los objetivo sdel Lote1
@@ -245,8 +243,8 @@ Favorecer la visibilidad de las experiencias y las buenas prácticas surgidas  
 Crear y animar una Red de gobiernos subnacionales, y otros actores, comprometidos con la cohesión social},
 
 %{Todas las actividades del proyecto
-Asistencia a emprendedores turísticos 
-Capacitación a prestadores de servicios turísticos no estatales 
+Asistencia a emprendedores turísticos
+Capacitación a prestadores de servicios turísticos no estatales
 Puesta en valor de sitios turísticos
 Participación en la creación  la  Ruta Camino Andino
 Creción de los  centros de acceso a nuevas tecnologías},
@@ -363,7 +361,7 @@ Capacitación de  personas en programas de inserción laboral y emprendimientos
 Asesoramiento a  personas en microfinanzas y otorgamiento de microcréditos
 Capacitaciones en microfinanzas y receptor de microcreditos
 Realización de una convocatorias a artistas jóvenes: pinturas murales en espacios públicos
-Rehabilitación de plazas Fugazot, Reducto, Centro Cultural Terminal Goes y Mercado Agrícola (Montevideo), 
+Rehabilitación de plazas Fugazot, Reducto, Centro Cultural Terminal Goes y Mercado Agrícola (Montevideo),
 Rehabilitación de plaza Independencia, microcentro, sede del gobierno y Teatro 25 de Agosto (Florida)
 Instalación de 1 centro cultural (Montevideo)
 Realización de campañas de sensibilización
@@ -451,13 +449,10 @@ Creación de instrumentos de diálogo y concertación: Mesa de Gerentes de las M
 Creación de instrumentos para el fortalecimiento institucional: OPLAGEST, PIDET y SINTET
 Creación de alianzas estratégicas regionales (colaboración con CTPT y SICA) y con varios actores territoriales},
 
-"",
 
 ]
 
 objectives = [
-
-"",
 
 "Contribuir a consecución del objetivo general y específico del Programa URB-AL III para incrementar la cohesión social y territorial en colectividades locales y regionales en América latina",
 
@@ -501,7 +496,21 @@ objectives = [
 
 "Contribuir a la Cohesión Social y la gestión transfronteriza",
 
-"",
+]
+
+
+politics = [
+
+"Políticas de desarrollo económico local y emprendedurismo",
+"Políticas de medio ambiente y gestión de residuos",
+"Políticas de gestión y ordenamiento territorial",
+"Políticas ocupacionales y de apoyo a migrantes",
+"Políticas de participación ciudadana",
+"Políticas de cooperación transfronteriza",
+"Políticas de rehabilitación sociourbana",
+"Políticas de seguridad pública",
+"Políticas de fiscalidad",
+"Políticas de fortalecimiento institucional",
 
 ]
 
@@ -515,4 +524,5 @@ objectives  = objectives.map{ |str| str_format str }
   partners:       partners,
   objectives:     objectives,
   activities:     activities,
+  politics:       politics,
 }

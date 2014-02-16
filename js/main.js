@@ -9,8 +9,9 @@ $(function(){
   project_name = document.querySelector("[name=project_name]")
   partners_cont = document.querySelector(".partners")
   project_name.addEventListener("change", function(){
-    sel = document.querySelector("[name=partners]")
-    sel.remove()
+    // sel = document.querySelector("[name=partners]")
+    // sel.remove()
+    $("[name=partners]").remove()
     // append
     name_idx = _(project_names).indexOf(project_name.value)
     options = ""
@@ -19,7 +20,6 @@ $(function(){
     })
     select = "<select name='partners'>"+options+"</select>"
     $(partners_cont).append(select)
-
   })
 
   activities_cont = document.querySelector(".activities_cont")
@@ -37,25 +37,24 @@ $(function(){
     })
     select = "<select name='activities'>"+options+"</select>"
     $(activities_cont).append(select)
+
     bind_activities()
-
-    // change activity
-    activities_name = document.querySelector("[name=activities]")
-    $(".activities").html(activities_name.value || "...")
-    // change objectives
-
-    // console.log(name_idx)
-    // console.log(objectives)
-    // console.log(objectives[name_idx])
-    $(".objectives").html(objectives[name_idx] || "...")
-
-    //
+    do_changes()
   })
-
 
   project_name.addEventListener("change", function(){
-    $(".project_name").html(project_name.value)
+    $(".project_names").html(project_name.value)
   })
+
+  function do_changes(){
+    // change activity
+    activities_name = document.querySelector("[name=activities]")
+    $(".activities").html(activities_name.value)
+    // change objectives
+    project_name = document.querySelector("[name=project_name]")
+    name_idx = _(project_names).indexOf(project_name.value)
+    $(".objectives").html(objectives[name_idx][0])
+  }
 
   function bind_activities() {
     activities_name = document.querySelector("[name=activities]")
@@ -65,5 +64,6 @@ $(function(){
   }
 
   bind_activities()
+  do_changes()
 
 })

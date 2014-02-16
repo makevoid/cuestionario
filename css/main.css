@@ -3,7 +3,7 @@ body {
 
 body {
   font-family: Helvetica, Arial, Verdana;
-  font-size: 120%;
+  font-size: 110%;
   color: #222222;
   margin-bottom: 35px; }
 
@@ -12,10 +12,11 @@ input, select, textarea {
   display: block; }
 
 textarea {
-  width: 80%; }
+  width: 80%;
+  margin-bottom: 25px; }
 
 select {
-  font-size: 1.15em; }
+  font-size: 1.05em; }
 
 input, select {
   margin-bottom: 0.8em; }
