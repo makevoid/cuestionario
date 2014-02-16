@@ -15,7 +15,7 @@
     <script src='js/main.js' type='text/javascript'></script>
   </head>
   <body>
-    <form>
+    <form action='/success.html' method='get'>
       <h1>Cuestionario para participantes en actividades del Programa URB-AL III</h1>
       <section>
         <h1>1. Informaciones sobre usted (la persona que responde al cuestionario)</h1>
@@ -340,12 +340,12 @@
           </select>
         </label>
         <label>
-          De ser possible podría indicar poqué usted considera qua la organizacion del proyecto fue (F> aparece la opción escogida)
+          De ser possible podría indicar poqué usted considera qua la organizacion del proyecto fue <strong class='organizacion'>...</strong>
           <input />
         </label>
         <label>
           Considera usted que los medios puestos a disposición para la realización de las actividades del proyecto <strong class='project_names'>Oficina de Coordinación OCO (Coordinada por Diputación de Barcelona)</strong> fueron?
-          <select>
+          <select name='puestos'>
             <option>
               abundantes
             </option>
@@ -361,7 +361,7 @@
           </select>
         </label>
         <label>
-          De ser posible podría indicar poqué usted considera que los medios puestos a disposición fueron (F> aparece la opción escogida)
+          De ser posible podría indicar poqué usted considera que los medios puestos a disposición fueron <strong class='puestos'>...</strong>
           <textarea tag='area'></textarea>
         </label>
       </section>
@@ -369,7 +369,7 @@
         <h1>5. Apreciación respecto a los efectos del Proyecto</h1>
         <label>
           Como considera usted que las actividades de <strong class='activities'>...</strong>  en la cuales usted ha participado contribuyeron al logro del Objetivo Especifico del Proyecto  que era de <strong class='objectives'>["Contribuir a consecución del objetivo general y específico del Programa URB-AL III para incrementar la cohesión social y territorial en colectividades locales y regionales en América latina"]</strong>?
-          <select>
+          <select name='apreciacion_efectos'>
             <option>
               mucho
             </option>
@@ -385,7 +385,7 @@
           </select>
         </label>
         <label>
-          De ser posible podría indicar porqué usted considera que el nivel de contribución al Objetivo especifico fué (F> aparece la opción escogida)
+          De ser posible podría indicar porqué usted considera que el nivel de contribución al Objetivo especifico fué <strong class='apreciacion_efectos'>...</strong>
           <textarea tag='area'></textarea>
         </label>
       </section>

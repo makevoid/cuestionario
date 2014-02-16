@@ -63,7 +63,7 @@
     %script{ src: "js/main.js", type: "text/javascript" }
 
   %body
-    %form
+    %form{ action: "/success.html", method: :get }
       %h1 Cuestionario para participantes en actividades del Programa URB-AL III
 
       %section
@@ -117,18 +117,18 @@
 
         - input "Considera usted que la organización para la realización de las actividades del proyecto #{strong_sel :project_names} fue?", ["muy adecuada", "adecuada", "poco adecuada", "inadecuada"], name: :organizacion
 
-        - input "De ser possible podría indicar poqué usted considera qua la organizacion del proyecto fue (F> aparece la opción escogida)"
+        - input "De ser possible podría indicar poqué usted considera qua la organizacion del proyecto fue #{strong_sel_group :organizacion}"
 
-        - input "Considera usted que los medios puestos a disposición para la realización de las actividades del proyecto #{strong_sel :project_names} fueron?", ["abundantes", "adecuados", "insuficientes", "muy escasos"]
+        - input "Considera usted que los medios puestos a disposición para la realización de las actividades del proyecto #{strong_sel :project_names} fueron?", ["abundantes", "adecuados", "insuficientes", "muy escasos"], name: :puestos
 
-        - input "De ser posible podría indicar poqué usted considera que los medios puestos a disposición fueron (F> aparece la opción escogida)", tag: :area
+        - input "De ser posible podría indicar poqué usted considera que los medios puestos a disposición fueron #{strong_sel_group :puestos}", tag: :area
 
       %section
         %h1 5. Apreciación respecto a los efectos del Proyecto
 
-        - input "Como considera usted que las actividades de #{strong_sel_group :activities}  en la cuales usted ha participado contribuyeron al logro del Objetivo Especifico del Proyecto  que era de #{strong_sel :objectives}?", %w(mucho parcialmente poco nada)
+        - input "Como considera usted que las actividades de #{strong_sel_group :activities}  en la cuales usted ha participado contribuyeron al logro del Objetivo Especifico del Proyecto  que era de #{strong_sel :objectives}?", %w(mucho parcialmente poco nada), name: :apreciacion_efectos
 
-        - input "De ser posible podría indicar porqué usted considera que el nivel de contribución al Objetivo especifico fué (F> aparece la opción escogida)", tag: :area
+        - input "De ser posible podría indicar porqué usted considera que el nivel de contribución al Objetivo especifico fué #{strong_sel_group :apreciacion_efectos}", tag: :area
 
       %section
         %h1 6. Apreciación respecto a la durabilidad de los efectos del Proyecto
