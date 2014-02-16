@@ -25,7 +25,7 @@ body {
   background: #e4fbff;
   position: relative; }
 
-body > h1 {
+body > form > h1 {
   background: #385f93;
   color: white;
   border-top: 2px solid #2a476e;
@@ -39,11 +39,11 @@ body > h1 {
   left: 0;
   top: 0; }
 
-body > section {
+body > form > section {
   width: 96%;
   margin: 0 auto; }
 
-body > section > h1 {
+body > form > section > h1 {
   background: #6a92c7;
   color: white;
   padding-top: 0.2em;
@@ -53,3 +53,11 @@ body > section > h1 {
   border: 1px solid #2a476e;
   text-shadow: 0 -1px 0 #385f93;
   box-shadow: 0 1px 0 1px #8fadd5 inset; }
+
+.note {
+  font-size: 0.85em;
+  font-style: oblique; }
+
+input[type=submit] {
+  font-size: 1.2em;
+  margin: 40px 0 40px 0; }

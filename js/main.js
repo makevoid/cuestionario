@@ -46,24 +46,37 @@ $(function(){
     $(".project_names").html(project_name.value)
   })
 
+
+  doc = document
+  @  = doc.querySelector
+
   function do_changes(){
     // change activity
-    activities_name = document.querySelector("[name=activities]")
+    activities_name = @("[name=activities]")
     $(".activities").html(activities_name.value)
     // change objectives
-    project_name = document.querySelector("[name=project_name]")
+    project_name = @("[name=project_name]")
     name_idx = _(project_names).indexOf(project_name.value)
     $(".objectives").html(objectives[name_idx][0])
   }
 
   function bind_activities() {
-    activities_name = document.querySelector("[name=activities]")
+    activities_name = @("[name=activities]")
     activities_name.addEventListener("change", function(){
       $(".activities").html(activities_name.value)
     })
   }
 
+  function previous_answer() {
+    tags = ["pobolacion_beneficiaria", "antani"]
+    _(tags).each(function(tag){
+      value = @("[name="+tag+"]").value
+      $("."+tag).html(value)
+    })
+  }
+
   bind_activities()
   do_changes()
+  previous_answer()
 
 })
