@@ -3,7 +3,7 @@ def str_format(str)
 end
 
 project_names = <<-STR
-Oficina de Coordinación OCO (Coordinada por Diputación de Barcelona)
+Proyecto Oficina de Coordinación OCO (Coordinada por Diputación de Barcelona)
 Proyecto Fronteras Turísticas (coordinado por Frosinone, Italia)
 Proyecto emiDel (coordinado por L’Hospitalet de Llobregat, España)
 Proyecto La basura sirve (coordinado por Arezzo, Italia)
@@ -235,219 +235,219 @@ Región de Lombardia (Italia)},
 
 activities = [
 
-%{Todas las actividades del proyecto
-Asegurar la coordinación y el buen funcionamiento de los proyectos del Lote1
-Asegurar la coherencia de las acciones del Lote 1 entre sí y con los objetivo sdel Lote1
-Promover la reflexión estratégica sobre las políticas locales y regionales de cohesión soonal
-Favorecer la visibilidad de las experiencias y las buenas prácticas surgidas  de las acciones del Programa
-Crear y animar una Red de gobiernos subnacionales, y otros actores, comprometidos con la cohesión social},
+%{varias
+de asegurar la coordinación y el buen funcionamiento de los proyectos del Lote1
+de asegurar la coherencia de las acciones del Lote 1 entre sí y con los objetivo sdel Lote1
+de promover la reflexión estratégica sobre las políticas locales y regionales de cohesión soonal
+de favorecer la visibilidad de las experiencias y las buenas prácticas surgidas  de las acciones del Programa
+de crear y animar una Red de gobiernos subnacionales, y otros actores, comprometidos con la cohesión social},
 
-%{Todas las actividades del proyecto
-Asistencia a emprendedores turísticos
-Capacitación a prestadores de servicios turísticos no estatales
-Puesta en valor de sitios turísticos
-Participación en la creación  la  Ruta Camino Andino
-Creción de los  centros de acceso a nuevas tecnologías},
+%{varias
+de asistencia a emprendedores turísticos
+de capacitación a prestadores de servicios turísticos no estatales
+de puesta en valor de sitios turísticos
+de participación en la creación  la  Ruta Camino Andino
+de creción de los  centros de acceso a nuevas tecnologías},
 
-%{Todas las actividades del proyecto
-Formación técnica municipal en desarrollo económico
-Formación  para elaborar  planes de empresa
-Asistencia técnica para  emprendedores mediante atención personalizada.
-Utilización de los espacios  habilitados en apoyo a la emprendeduría
-Participación en la elaboración de un Documento sobre emprendedurismo e innovación social
-Participación en el desarrollo de una herramienta online de buenas prácticas
-Participación en la implementación de la Estrategia de Mercados Alternativos en La Paz
-Participación en la realización de acciones de mercado social},
+%{varias
+de formación técnica municipal en desarrollo económico
+de formación  para elaborar  planes de empresa
+de asistencia técnica para  emprendedores mediante atención personalizada.
+de utilización de los espacios  habilitados en apoyo a la emprendeduría
+de participación en la elaboración de un Documento sobre emprendedurismo e innovación social
+de participación en el desarrollo de una herramienta online de buenas prácticas
+de participación en la implementación de la Estrategia de Mercados Alternativos en La Paz
+de participación en la realización de acciones de mercado social},
 
-%{Todas las actividades del proyecto
-Promoción de cooperativa de recicladores
-Apoyo técnico para la constitución de las cooperativas recicladoras
-Participación como reciclador en el sistema de gestión de los residuos
-Participación como funcionario municipal y de instituciones nacionales en los seminarios de difusión de las experiencias
-Difusión de la cultura medioambiental entre la población
-Implicación de escuelas y empresas privadas en el sistema de segregación en origen},
+%{varias
+de promoción de cooperativa de recicladores
+de apoyo técnico para la constitución de las cooperativas recicladoras
+de participación como reciclador en el sistema de gestión de los residuos
+de participación como funcionario municipal y de instituciones nacionales en los seminarios de difusión de las experiencias
+de difusión de la cultura medioambiental entre la población
+de implicación de escuelas y empresas privadas en el sistema de segregación en origen},
 
-%{Todas las actividades del proyecto
-Mejora de los instrumentos de desarrollo sostenible en las zonas urbanas en desuso
-Implementación de procedimientos sostenibles de planeación integrados interdisciplinaria y participativa
-Revitalización de zonas en desuso destinadas a la creación de espacios verdes y lugares públicos
-Construcción de viviendas de bajo costo para grupos socialmente desfavorecidos
-Participación activa de personas de la sociedad civil en la fase de planificación de los proyectos piloto
-Realización de eventos públicos para incentivar a los actores locales y a las inversiones privadas},
+%{varias
+de mejora de los instrumentos de desarrollo sostenible en las zonas urbanas en desuso
+de implementación de procedimientos sostenibles de planeación integrados interdisciplinaria y participativa
+de revitalización de zonas en desuso destinadas a la creación de espacios verdes y lugares públicos
+de construcción de viviendas de bajo costo para grupos socialmente desfavorecidos
+de participación activa de personas de la sociedad civil en la fase de planificación de los proyectos piloto
+de realización de eventos públicos para incentivar a los actores locales y a las inversiones privadas},
 
-%{Todas las actividades del proyecto
-Capacitación técnica para diseñar, dirigir y ejecutar acciones de promoción productiva-económica
-Formación en cultura emprendedora para docentes y jóvenes
-Incorporación formal del currículo orientado al emprendedurismo en las escuelas e institutos
-Fortalecimiento o creación de  emprendimientos
-Establecimiento de canales de comunicación con  asociaciones de migrantes para la articulación de fondos de remesas
-Adecuación del Modelo de Ciudades Emprendedoras con Apoyo de Emigrados (CEAE) de México
-Consolidación y fortalecimiento de Oficinas de Desarrollo Económico Local (ODEL) en Bolivia
-Consolidación y fortalecimiento de Unidades de Promoción Económica en Pimampiro
-Consolidación y fortalecimiento de una unidad especializada DEL en Paysandú
-Consolidación y fortalecimiento de una Unidad de Promoción Económica y Productiva en Valparaíso
-Establecimiento de pactos sociales por el desarrollo económico de los municipios con todos los agentes},
+%{varias
+de capacitación técnica para diseñar, dirigir y ejecutar acciones de promoción productiva-económica
+de formación en cultura emprendedora para docentes y jóvenes
+de incorporación formal del currículo orientado al emprendedurismo en las escuelas e institutos
+de fortalecimiento o creación de  emprendimientos
+de establecimiento de canales de comunicación con  asociaciones de migrantes para la articulación de fondos de remesas
+de adecuación del Modelo de Ciudades Emprendedoras con Apoyo de Emigrados (CEAE) de México
+de consolidación y fortalecimiento de Oficinas de Desarrollo Económico Local (ODEL) en Bolivia
+de consolidación y fortalecimiento de Unidades de Promoción Económica en Pimampiro
+de consolidación y fortalecimiento de una unidad especializada DEL en Paysandú
+de consolidación y fortalecimiento de una Unidad de Promoción Económica y Productiva en Valparaíso
+de establecimiento de pactos sociales por el desarrollo económico de los municipios con todos los agentes},
 
-%{Todas las actividades del proyecto
-Apoyar el desarrollo de proyectos de creación de ingresos
-Seminarios y actividades de formación e intercambio de experiencias
-Capacitación de mujeres en telar y lana rústica
-Desarrollo de  proyectos pilotos de productores rurales
-Desarrollo de  senderos turísticos
-Desarrollo del «Estudio de Normativas»},
+%{varias
+de apoyo al desarrollo de proyectos de creación de ingresos
+de seminarios y actividades de formación e intercambio de experiencias
+de capacitación de mujeres en telar y lana rústica
+de desarrollo de  proyectos pilotos de productores rurales
+de desarrollo de  senderos turísticos
+de desarrollo del «Estudio de Normativas»},
 
-%{Todas las actividades del proyecto
-Capacitación de jóvenes para ser insertados laboralmente
-Capacitación de gestores y/o técnicos sobre prevención de la violencia
-Participación en proyectos/acciones/programas de inclusión social, cultural y cívica
-Capacitación de  líderes comunitarios y actores de la sociedad civil como multiplicadores
-Participación en debates, seminarios, encuentros sobre prevención de la violencia
-Elaboración del Plan Piloto en Paysandú que apoya los Faroles Comunitarios
-Implantación de una red de Prevención en Pernambuco, que fomenta sinergias entre actores
-Elaboración del Diagnóstico Participativo de Belén para el Comité de Seguridad Ciudadana
-Impulso o fortalecimiento de 7 políticas públicas},
+%{varias
+de capacitación de jóvenes para ser insertados laboralmente
+de capacitación de gestores y/o técnicos sobre prevención de la violencia
+de participación en proyectos/acciones/programas de inclusión social, cultural y cívica
+de capacitación de  líderes comunitarios y actores de la sociedad civil como multiplicadores
+de participación en debates, seminarios, encuentros sobre prevención de la violencia
+de elaboración del Plan Piloto en Paysandú que apoya los Faroles Comunitarios
+de implantación de una red de Prevención en Pernambuco, que fomenta sinergias entre actores
+de elaboración del Diagnóstico Participativo de Belén para el Comité de Seguridad Ciudadana
+de impulso o fortalecimiento de 7 políticas públicas},
 
-%{Todas las actividades del proyecto
-Censo de  comerciantes informales 
-Realización del diagnóstico participativo comerciantes informales
-Capacitación de  funcionarios
-Capacitación de funcionarios y comerciantes en el intercambio de experiencias en gestión de espacios públicos
-Capacitación de  miembros de comisiones barriales en cuidado de espacios públicos, participación ciudadana y género
-Construcción de  «casillas» de venta
-Capacitación de  comerciantes informales en gestión administrativa
-Creación/modificación de 3 legislaciones municipales
-Intercambios de experiencias con otras administraciones locales/regionales de URB-AL III},
+%{varias
+de censo de  comerciantes informales 
+de realización del diagnóstico participativo comerciantes informales
+de capacitación de  funcionarios
+de capacitación de funcionarios y comerciantes en el intercambio de experiencias en gestión de espacios públicos
+de capacitación de  miembros de comisiones barriales en cuidado de espacios públicos, participación ciudadana y género
+de construcción de  «casillas» de venta
+de capacitación de  comerciantes informales en gestión administrativa
+de creación/modificación de 3 legislaciones municipales
+de intercambios de experiencias con otras administraciones locales/regionales de URB-AL III},
 
-%{Todas las actividades del proyecto
-Desarrollo de una metodología innovadora para el intercambio de conocimientos y experiencias
-Desarrollo de una comunidad en red permanente con función de cámaras de compensación
-Formación de agentes de desarrollo local de las cadenas productivas
-Mejora de las competencias de los actores económicos, sociales e institucionales para el posicionamiento en mercados nacionales e internacionales
-Aumento del nivel de vinculación entre el capital social y los sistemas productivos locales
-Desarrollo de un modelo de finanzas de distrito con nuevas herramientas financieras para las MIPYMES
-Investigaciones sobre las aportaciones del proyecto al capital social en los territorios de intervención},
+%{varias
+de desarrollo de una metodología innovadora para el intercambio de conocimientos y experiencias
+de desarrollo de una comunidad en red permanente con función de cámaras de compensación
+de formación de agentes de desarrollo local de las cadenas productivas
+de mejora de las competencias de los actores económicos, sociales e institucionales para el posicionamiento en mercados nacionales e internacionales
+de aumento del nivel de vinculación entre el capital social y los sistemas productivos locales
+de desarrollo de un modelo de finanzas de distrito con nuevas herramientas financieras para las MIPYMES
+de nvestigaciones sobre las aportaciones del proyecto al capital social en los territorios de intervención},
 
-%{Todas las actividades del proyecto
-Capacitación de  mujeres en los Pactos Formativos Locales de Género
-Capacitación de técnicos municipales en la gestión de políticas de ocupación y género
-Promoción de la ocupación femenina a través de los Pactos Formativos Locales de Género
-Elaboración de un Plan local para las políticas de género
-Creación de una Agencia para la Empleabilidad Femenina y 10 Secretarías de la Mujer en el Departamento Central (Paraguay)
-Aumento de la participación femenina en la toma de decisiones y consolidación de los derechos de la mujer
-Realización de ferias y promoción de productos de mujeres capacitadas en el marco del proyecto
-Elaboración de Planes de desarrollo municipal con enfoque de género
-Ejecución de talleres de sensibilización y capacitación a las concejalas y asambleístas mujeres en género
-Incorporación de aspectos de género en el estatuto autonómico departamental, la ley de desarrollo humano y las cartas orgánicas municipales de Bolivia},
+%{varias
+de capacitación de  mujeres en los Pactos Formativos Locales de Género
+de capacitación de técnicos municipales en la gestión de políticas de ocupación y género
+de promoción de la ocupación femenina a través de los Pactos Formativos Locales de Género
+de elaboración de un Plan local para las políticas de género
+de creación de una Agencia para la Empleabilidad Femenina y 10 Secretarías de la Mujer en el Departamento Central (Paraguay)
+de aumento de la participación femenina en la toma de decisiones y consolidación de los derechos de la mujer
+de realización de ferias y promoción de productos de mujeres capacitadas en el marco del proyecto
+de elaboración de Planes de desarrollo municipal con enfoque de género
+de ejecución de talleres de sensibilización y capacitación a las concejalas y asambleístas mujeres en género
+de incorporación de aspectos de género en el estatuto autonómico departamental, la ley de desarrollo humano y las cartas orgánicas municipales de Bolivia},
 
-%{Todas las actividades del proyecto
-Reimpresión, difusión, implementación y seguimiento del Plan Estratégico Provincial (PEP)
-Construcción de Plan Estratégico Provincial Visión 2030
-Consolidación del proceso de planificación estratégica participativa como política de Estado
-Creación y puesta en marcha de consejos regionales de planificación estratégica
-Equipamiento y puesta en funcionamiento de centros cívicos
-Realización de  seminarios temáticos y  congresos de la Red de Ciudades de la provincia de Santa Fe
-Capacitaciones a  autoridades locales y facilitadores
-Realización de  jornadas interministeriales con los equipos técnicos- políticos del Gobierno de Santa Fe
-Sensibilización y capacitación de funcionarios públicos en un proceso  sobre temáticas surgidas del PEP
-Realización y publicación de un Programa de pasantías para gobiernos intermedios latinoamericanos
-Realización de encuentros presenciales de trabajo entre los socios del proyecto
-Realización de un sistema de indicadores regionales desarrollado
-Realización de encuentros de intercambio y transferencia sobre innovación institucional en gobiernos intermedios
-Sistematización y publicación de experiencias del proyecto},
+%{varias
+de reimpresión, difusión, implementación y seguimiento del Plan Estratégico Provincial (PEP)
+de construcción de Plan Estratégico Provincial Visión 2030
+de consolidación del proceso de planificación estratégica participativa como política de Estado
+de creación y puesta en marcha de consejos regionales de planificación estratégica
+de equipamiento y puesta en funcionamiento de centros cívicos
+de realización de  seminarios temáticos y  congresos de la Red de Ciudades de la provincia de Santa Fe
+de capacitaciones a  autoridades locales y facilitadores
+de realización de  jornadas interministeriales con los equipos técnicos- políticos del Gobierno de Santa Fe
+de sensibilización y capacitación de funcionarios públicos en un proceso  sobre temáticas surgidas del PEP
+de realización y publicación de un Programa de pasantías para gobiernos intermedios latinoamericanos
+de realización de encuentros presenciales de trabajo entre los socios del proyecto
+de realización de un sistema de indicadores regionales desarrollado
+de realización de encuentros de intercambio y transferencia sobre innovación institucional en gobiernos intermedios
+de sistematización y publicación de experiencias del proyecto},
 
-%{Todas las actividades del proyecto
-Puesta en funcionamiento de1 centro de desarrollo económico (CEDECO) y del centro de promoción laboral
-Capacitación de  personas en programas de inserción laboral y emprendimientos
-Asesoramiento a  personas en microfinanzas y otorgamiento de microcréditos
-Capacitaciones en microfinanzas y receptor de microcreditos
-Realización de una convocatorias a artistas jóvenes: pinturas murales en espacios públicos
-Rehabilitación de plazas Fugazot, Reducto, Centro Cultural Terminal Goes y Mercado Agrícola (Montevideo),
-Rehabilitación de plaza Independencia, microcentro, sede del gobierno y Teatro 25 de Agosto (Florida)
-Instalación de 1 centro cultural (Montevideo)
-Realización de campañas de sensibilización
-Instalación de mobiliario urbano
-Realización de muestras públicas «Hechos con deshechos» en coordinación con centros educativos (Montevideo)
-Elaboración de la publicación de la sistematización del impacto del proyecto en Goes y libro de relatos infantiles},
+%{varias
+de puesta en funcionamiento de1 centro de desarrollo económico (CEDECO) y del centro de promoción laboral
+de capacitación de  personas en programas de inserción laboral y emprendimientos
+de asesoramiento a  personas en microfinanzas y otorgamiento de microcréditos
+de capacitaciones en microfinanzas y receptor de microcreditos
+de realización de una convocatorias a artistas jóvenes: pinturas murales en espacios públicos
+de rehabilitación de plazas Fugazot, Reducto, Centro Cultural Terminal Goes y Mercado Agrícola (Montevideo),
+de rehabilitación de plaza Independencia, microcentro, sede del gobierno y Teatro 25 de Agosto (Florida)
+de instalación de 1 centro cultural (Montevideo)
+de realización de campañas de sensibilización
+de instalación de mobiliario urbano
+de realización de muestras públicas «Hechos con deshechos» en coordinación con centros educativos (Montevideo)
+de elaboración de la publicación de la sistematización del impacto del proyecto en Goes y libro de relatos infantiles},
 
-%{Todas las actividades del proyecto
-Realización de análisis FODA sobre las necesidades territoriales
-Constitución de  grupos de trabajo con actores claves del territorio y reuniones interinstitucionales y multiniveles
-Elaboración de acuerdos territoriales para el desarrollo socioeconómico
-Realización  eventos locales de difusión
-Capacitación de  de  funcionarios públicos y  técnicos  en planificación de desarrollo local
-Participación en  intercambios UE/LA
-Planificación/implementación del Plan Estratégico Subregional Oriente (Antioquia)
-Creación de empresas en sectores emergentes (Paraná)
-Fortalecimiento de Agencias de Desarrollo Local (Buenos Aires)
-Creación de un dispositivo territorial para coordinación multisectorial (General Pueyrredón)
-Elaboración y publicación del Manual de buenas prácticas y procedimientos dpara la Agencia de Desarrollo de Olavarría
-Elaboración y publicación del libro Cohesión social y territorio: algunas reflexiones a partir de la experiencia de EU-LA
-Sistematización y publicaciones de documentos sobre planes estratégicos de diferentes regiones del Departamento de Antioquia},
+%{varias
+de realización de análisis FODA sobre las necesidades territoriales
+de constitución de  grupos de trabajo con actores claves del territorio y reuniones interinstitucionales y multiniveles
+de elaboración de acuerdos territoriales para el desarrollo socioeconómico
+de realización  eventos locales de difusión
+de capacitación de  de  funcionarios públicos y  técnicos  en planificación de desarrollo local
+de participación en  intercambios UE/LA
+de planificación/implementación del Plan Estratégico Subregional Oriente (Antioquia)
+de creación de empresas en sectores emergentes (Paraná)
+de fortalecimiento de Agencias de Desarrollo Local (Buenos Aires)
+de creación de un dispositivo territorial para coordinación multisectorial (General Pueyrredón)
+de elaboración y publicación del Manual de buenas prácticas y procedimientos dpara la Agencia de Desarrollo de Olavarría
+de elaboración y publicación del libro Cohesión social y territorio: algunas reflexiones a partir de la experiencia de EU-LA
+de sistematización y publicaciones de documentos sobre planes estratégicos de diferentes regiones del Departamento de Antioquia},
 
-%{Todas las actividades del proyecto
-Implementación en Honduras de un plan de empleo juvenil
-Implantación de proyectos de  apoyo a creación de empresas
-Desarrollo en México de un modelo para la incubadora interinstitucional de apoyo a las empresas de base tecnológica (INCU- BT)
-Creación de la red de facilitadores de la incubadora y delas oficinas de enlace en los centros de educación superior
-Adaptación en Chile de la metodología del Gobierno Vasco para el desarrollo del «Programa Piloto de Agendas de Innovación»
-Desarrollo de la metodología de agendas de innovación},
+%{varias
+de implementación en Honduras de un plan de empleo juvenil
+de implantación de proyectos de  apoyo a creación de empresas
+de desarrollo en México de un modelo para la incubadora interinstitucional de apoyo a las empresas de base tecnológica (INCU- BT)
+de creación de la red de facilitadores de la incubadora y delas oficinas de enlace en los centros de educación superior
+de adaptación en Chile de la metodología del Gobierno Vasco para el desarrollo del «Programa Piloto de Agendas de Innovación»
+de desarrollo de la metodología de agendas de innovación},
 
-%{Todas las actividades del proyecto
-Participación en la construcción de la Política Metropolitana de Inclusión Social
-Diagnóstico de inequidades sociales y apoyo a la Política Metropolitana de Inclusión Social mediante el Plan Metropolitano de Desarrollo de Quito
-Apoyo a la propuesta de la Red de Jóvenes de Pueblos y Nacionalidades para la agenda juvenil de pueblos y nacionalidades en Quito
-Fortalecimiento de las casas de las juventudes en Quito
-Equipamiento  y adecuación de espacios comunitarios en Santa Tecla
-Realización de eventos culturales realizados de Santa Tecla y en Quito
-Apoyo a PPL de equidad, género, niñez, adolescencia y juventud en Santa Tecla
-Capacitación de  técnicos, funcionarios municipales y tomadores de decisión sobre políticas públicas locales en Santa Tecla
-Capacitación  en comunicación popular, audiovisual y alfabetización digital en Santa Tecla
-Realización/participación en ferias de la convivencia urbano y rural, rescatando la cultura del municipio},
+%{varias
+de participación en la construcción de la Política Metropolitana de Inclusión Social
+de diagnóstico de inequidades sociales y apoyo a la Política Metropolitana de Inclusión Social mediante el Plan Metropolitano de Desarrollo de Quito
+de apoyo a la propuesta de la Red de Jóvenes de Pueblos y Nacionalidades para la agenda juvenil de pueblos y nacionalidades en Quito
+de fortalecimiento de las casas de las juventudes en Quito
+de equipamiento  y adecuación de espacios comunitarios en Santa Tecla
+de realización de eventos culturales realizados de Santa Tecla y en Quito
+de apoyo a PPL de equidad, género, niñez, adolescencia y juventud en Santa Tecla
+de capacitación de  técnicos, funcionarios municipales y tomadores de decisión sobre políticas públicas locales en Santa Tecla
+de capacitación  en comunicación popular, audiovisual y alfabetización digital en Santa Tecla
+de realización/participación en ferias de la convivencia urbano y rural, rescatando la cultura del municipio},
 
-%{Todas las actividades del proyecto
-Capacitación de  funcionarios públicos en SIG-PP (Sistema de Información Geográfica Público y Participativo)
-Realización de  talleres participativos
-Realización de análisis de los conflictos sociales y territoriales mediante la metodología experimental de conflictos
-Implementación de la plataforma Sistema de Integración Territorial (SIT) en cada uno de los cinco territorios
-Sensibilización de ciudadanos/as en Punilla a través de encuentros públicos
-Sensibilización de  personas en Viña del Mar mediante  encuentros públicos
-Sensibilización de ciudadanos/as
-Elaboración de diagnósticos y censos poblacionales
-Celebración de seminarios sobre acuerdos público-privados para el desarrollo urbano
-Elaboración de  un Plan Maestro en Viña del Mar},
+%{varias
+de capacitación de  funcionarios públicos en SIG-PP (Sistema de Información Geográfica Público y Participativo)
+de realización de  talleres participativos
+de realización de análisis de los conflictos sociales y territoriales mediante la metodología experimental de conflictos
+de implementación de la plataforma Sistema de Integración Territorial (SIT) en cada uno de los cinco territorios
+de sensibilización de ciudadanos/as en Punilla a través de encuentros públicos
+de sensibilización de  personas en Viña del Mar mediante  encuentros públicos
+de sensibilización de ciudadanos/as
+de elaboración de diagnósticos y censos poblacionales
+de celebración de seminarios sobre acuerdos público-privados para el desarrollo urbano
+de elaboración de  un Plan Maestro en Viña del Mar},
 
-%{Todas las actividades del proyecto
-Capacitación de recolectores en gestión de sus microempresas y en sus actividades ocupacionales
-Creación de  microempresas de los sectores del reciclaje y la actividad agrícola
-Constitución legal de cooperativas de recicladores y una cooperativa mixta de reciclaje y actividad agrícola (Managua)
-Sensibilización de vecinos, alumnos escolares y maestros en la mejora de la recogida selectiva
-Construcción de red de ecoestaciones, planta de selección y transferencia de residuos, ressourcerie, actividad agrícola, red de compostadoras y puestos de venta de los nuevos productos
-Constitución de redes de microempresas para gestionar las infraestructuras creadas.
-Creación de organismos de concertación entre los diferentes agentes públicos, privados y organismos internacionales que apoyen las acciones de RESSOC},
+%{varias
+de capacitación de recolectores en gestión de sus microempresas y en sus actividades ocupacionales
+de creación de  microempresas de los sectores del reciclaje y la actividad agrícola
+de constitución legal de cooperativas de recicladores y una cooperativa mixta de reciclaje y actividad agrícola (Managua)
+de sensibilización de vecinos, alumnos escolares y maestros en la mejora de la recogida selectiva
+de construcción de red de ecoestaciones, planta de selección y transferencia de residuos, ressourcerie, actividad agrícola, red de compostadoras y puestos de venta de los nuevos productos
+de constitución de redes de microempresas para gestionar las infraestructuras creadas.
+de creación de organismos de concertación entre los diferentes agentes públicos, privados y organismos internacionales que apoyen las acciones de RESSOC},
 
-%{Todas las actividades del proyecto
-Creación del Consorcio Público Metropolitano para la Gestión Integral de Residuos Sólidos Urbanos en El Gran San Miguel, Tucumán, Argentina
-Capacitación y asesoramiento a las autoridades municipales, técnicos y actores supramunicipales en la Mancomunidad del Norte Paceño Tropical, Bolivia
-Foro sobre territorio, poder local, derechos de los pueblos indígenas e intermunicipalismo, suscripción de Carta de Territorialidad de los Huista, en San Antonio Huista, Guatemala
-Institucionalización de la intermunicipalidad CITIRS «Monarca de Oriente A.C.», que integran 7 municipios de Michoacán, México
-Fomento a la intermunicipalidad, trabajo conjunto con las alcaldías que componen la AMUPEBLAN en Tuma La Dalia, Nicaragua
-Elaboración, edición y publicación del libro: La Intermunicipalidad: una nueva estrategia de gobernanza local},
+%{varias
+de creación del Consorcio Público Metropolitano para la Gestión Integral de Residuos Sólidos Urbanos en El Gran San Miguel, Tucumán, Argentina
+de capacitación y asesoramiento a las autoridades municipales, técnicos y actores supramunicipales en la Mancomunidad del Norte Paceño Tropical, Bolivia
+de creación de un foro sobre territorio, poder local, derechos de los pueblos indígenas e intermunicipalismo, suscripción de Carta de Territorialidad de los Huista, Guatemala
+de institucionalización de la intermunicipalidad CITIRS «Monarca de Oriente A.C.», que integran 7 municipios de Michoacán, México
+de fomento a la intermunicipalidad, trabajo conjunto con las alcaldías que componen la AMUPEBLAN en Tuma La Dalia, Nicaragua
+de elaboración, edición y publicación del libro: La Intermunicipalidad: una nueva estrategia de gobernanza local},
 
-%{Todas las actividades del proyecto
-Catastro  de Más del 90% del territorio (91,531 predios) de los municipios beneficiarios
-Elaboración de tres planes de desarrollo municipal con enfoque en ordenamiento territorial
-Desarrollo e implementación en cuatro municipalidades del Sistema de Gestión Integral de Tierras basado en LADM (Land Administration Domain Model) y STDM (Social Tenure Domain Model)
-Fortalecimiento o creación de departamentos municipales
-Socialización y concientización de los temas catastrales y de ordenamiento territorial con toda la población},
+%{varias
+de catastro  de Más del 90% del territorio (91,531 predios) de los municipios beneficiarios
+de elaboración de tres planes de desarrollo municipal con enfoque en ordenamiento territorial
+de desarrollo e implementación en cuatro municipalidades del Sistema de Gestión Integral de Tierras basado en LADM (Land Administration Domain Model) y STDM (Social Tenure Domain Model)
+de fortalecimiento o creación de departamentos municipales
+de socialización y concientización de los temas catastrales y de ordenamiento territorial con toda la población},
 
-%{Todas las actividades del proyecto
-Homologación y promocción en siete mancomunidades de los tres países de la política pública «Ciudad Limpia»
-Homologación y promocción en 20 municipios de 5 mancomunidades de los tres países de la política pública «Territorio Indivisible»
-Aprobación en 7 municipios de la Mancomunidad Trinacional de ordenanzas municipales para la implementación de la política «Bosques para Siempre» y «Aguas Compartidas»
-Coordinacción de acciones entre 12 instituciones públicas nacionales y locales, junto a tres instituciones regionales centroamericanas, para la cohesión social y la gestión territorial fronteriza
-Creación de instrumentos de diálogo y concertación: Mesa de Gerentes de las Mancomunidades, Mesas de Alcaldes, Mesas Multisectoriales, COMTRISGEST
-Creación de instrumentos para el fortalecimiento institucional: OPLAGEST, PIDET y SINTET
-Creación de alianzas estratégicas regionales (colaboración con CTPT y SICA) y con varios actores territoriales},
+%{varias
+de homologación y promocción en siete mancomunidades de los tres países de la política pública «Ciudad Limpia»
+de homologación y promocción en 20 municipios de 5 mancomunidades de los tres países de la política pública «Territorio Indivisible»
+de aprobación en 7 municipios de la Mancomunidad Trinacional de ordenanzas municipales para la implementación de la política «Bosques para Siempre» y «Aguas Compartidas»
+de coordinacción de acciones entre 12 instituciones públicas nacionales y locales, junto a tres instituciones regionales centroamericanas, para la cohesión social y la gestión territorial fronteriza
+de creación de instrumentos de diálogo y concertación: Mesa de Gerentes de las Mancomunidades, Mesas de Alcaldes, Mesas Multisectoriales, COMTRISGEST
+de creación de instrumentos para el fortalecimiento institucional: OPLAGEST, PIDET y SINTET
+de creación de alianzas estratégicas regionales (colaboración con CTPT y SICA) y con varios actores territoriales},
 
 
 ]
