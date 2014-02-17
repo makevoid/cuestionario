@@ -65,7 +65,7 @@ $(function(){
   }
 
   function previous_answer() {
-    var tags = ["efectos", "apreciacion_efectos", "organizacion", "puestos"]
+    var tags = ["efectos", "pobolacion_beneficiaria", "apreciacion_efectos", "organizacion", "puestos"]
     _(tags).each(function(tag){
       value = document.querySelector("[name="+tag+"]").value
       $("."+tag).html(value)
