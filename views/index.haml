@@ -7,7 +7,7 @@
     :ruby
       alias :write  :haml_concat
       alias :tag    :haml_tag
-
+ 
       def input_text(label, options)
         tag :input
       end
@@ -68,7 +68,7 @@
 
       %section
         %h1 1. Informaciones sobre usted (la persona que responde al cuestionario)
-        - input "Nombre y apellido (opcional)"
+        - input "Nombre y apellido (no obligatorio)"
         - input "Edad (años, en cifra)"
         - input "Sexo", %w(M F)
         - input "Lugar de residencia"
@@ -89,15 +89,15 @@
       %section
         %h1 2. Información sobre el Proyecto URB-AL III en el cual usted ha participado
 
-        - input "a. Nombre del Proyecto (elegir del listado a continuación)", selects[:project_names], name: :project_name
+        - input "a. Nombre del Proyecto (elija del listado a continuación)", selects[:project_names], name: :project_name
 
         .partners
-          - input "b. Socio del Proyecto con el cual usted ha participado (elegir del listado a continuación)", selects[:partners][0], name: :partners
+          - input "b. Socio del Proyecto con el cual usted ha participado (elija del listado a continuación)", selects[:partners][0], name: :partners
 
-        - input "c. Su Función al tiempo en el cual participó en el proyecto (elegir del listado a continuación)", selects[:functions]
+        - input "c. Su Función al tiempo en el cual participó en el proyecto (elija del listado a continuación)", selects[:functions]
 
         .activities_cont
-          - input "d. Actividades del Proyecto en las cuales usted ha participado (elegir del listado a continuación)" , selects[:activities][0], name: :activities, multiple: true
+          - input "d. Actividades del Proyecto en las cuales usted ha participado (elija del listado a continuación marcando \"varias\" si usted participo' en todas o varias de ellas o elija una actividad especifica del listado si su participacion se centro' particularmente en ella)" , selects[:activities][0], name: :activities, multiple: true
         .note
           nota: presionar el tasto
           %strong ctrl
@@ -112,7 +112,7 @@
 
         - input "Sabe usted si dicho proceso o política estaba ya priorizada en la institución participante?", ["priorizada", "no priorizada", "no se"]
 
-        - input "Como considera usted que las actividades de #{strong_sel_group :activities}  respondieron a las necesidades/prioridades de la población beneficaria del municipio/provincia donde se realizaron?", ["muy apropriadamente", "aprpriadamente", "eran poco apropiadas", "sin ninguna relación"], name: :pobolacion_beneficiaria
+        - input "Como considera usted que las actividades #{strong_sel_group :activities} en la(s) cual(es) usted participo' respondieron a las necesidades/prioridades de la población beneficaria del municipio/provincia donde se realizaron?", ["muy apropriadamente", "aprpriadamente", "eran poco apropiadas", "sin ninguna relación"], name: :pobolacion_beneficiaria
 
         - input "De ser posible podría indicar poqué usted considera qua las actividades del proyecto respondieron #{strong_sel_group :pobolacion_beneficiaria} a las necesidades/prioridades de la población beneficaria?", tag: :area
 
@@ -122,25 +122,25 @@
       %section
         %h1 4. Apreciación respecto a la ejecución del Proyecto
 
-        - input "Considera usted que la organización para la realización de las actividades del proyecto #{strong_sel :project_names} fue?", ["muy adecuada", "adecuada", "poco adecuada", "inadecuada"], name: :organizacion
+        - input "Considera usted que la organización para la realización de las actividades del #{strong_sel :project_names} fue?", ["muy adecuada", "adecuada", "poco adecuada", "inadecuada"], name: :organizacion
 
         - input "De ser possible podría indicar poqué usted considera qua la organizacion del proyecto fue #{strong_sel_group :organizacion}"
 
-        - input "Considera usted que los medios puestos a disposición para la realización de las actividades del proyecto #{strong_sel :project_names} fueron?", ["abundantes", "adecuados", "insuficientes", "muy escasos"], name: :puestos
+        - input "Considera usted que los medios puestos a disposición para la realización de las actividades del#{strong_sel :project_names} fueron?", ["abundantes", "adecuados", "insuficientes", "muy escasos"], name: :puestos
 
         - input "De ser posible podría indicar poqué usted considera que los medios puestos a disposición fueron #{strong_sel_group :puestos}", tag: :area
 
       %section
         %h1 5. Apreciación respecto a los efectos del Proyecto
 
-        - input "Como considera usted que las actividades de #{strong_sel_group :activities}  en la cuales usted ha participado contribuyeron al logro del Objetivo Especifico del Proyecto  que era de #{strong_sel :objectives}?", %w(mucho parcial poco nada), name: :apreciacion_efectos
+        - input "Como considera usted que las actividades #{strong_sel_group :activities}  en la cuales usted ha participado contribuyeron al logro del Objetivo Especifico del Proyecto  que era de #{strong_sel :objectives}?", %w(mucho parcial poco nada), name: :apreciacion_efectos
 
         - input "De ser posible podría indicar porqué usted considera que el nivel de contribución al Objetivo especifico fué #{strong_sel_group :apreciacion_efectos}", tag: :area
 
       %section
         %h1 6. Apreciación respecto a la durabilidad de los efectos del Proyecto
 
-        - input "Considera usted que los efectos esperados de #{strong_sel :objectives} se están manteniendo también en la actualidad, o se han perdido depsués de la finalización del Proyecto?", ["persisten totalmente", "persisten parcialmente", "se han perdido en mayoría", "se han perdido en mayoría"], name: :efectos
+        - input "Considera usted que los efectos esperados de #{strong_sel :objectives} se están manteniendo también en la actualidad, o se han perdido depsués de la finalización del Proyecto?", ["persisten totalmente", "persisten parcialmente", "se han perdido en mayoría"], name: :efectos
 
         - input "De ser posible podría indicar poqué usted considera que los efectos del Proyecto #{strong_sel_group :efectos}", tag: :area
 
