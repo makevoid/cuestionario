@@ -79,6 +79,13 @@
         - input "Instrucción", %w(primaria secundaria universitaria)
         - input "Otra instrucción (especificar)"
 
+
+      %section
+        %h1 a. Colaborador o beneficiario?
+        - input "Participó usted como colaborador o beneficiario de uno de los siguientes proyectos?". ["Si", "No"]
+
+
+      .collaborator
       %section
         %h1 2. Información sobre el Proyecto URB-AL III en el cual usted ha participado
 
@@ -141,8 +148,21 @@
 
         - input "En caso afirmativo podria indicar cual(es)?", tag: :area
 
+      %section
+        %h1 7. Servicios prestados por la OCO
 
+        - input "Participó usted en alguno de los siguientes servicios prestados por la OCO?", ["Diálogos regionales", "URBsociAL", "Encuentros de Capitalización", "Seminarios", "Plataforma de Liderazgo Local"]
+
+      %section
+        %h1 8. Servicios brindados por la OCO
+
+        - input "Cómo valora los servicios brindados por la OCO en los cuales usted participó?", ["Excelente" "Muy bueno" "Bueno" "Regular" "Malo"]
+
+        - input "Especifique por favor", tag: :area
+
+      // send
 
       %section
         %p Una vez terminado de rellenar el cuestionario presione el botón ENVIA.
         %input{ type: :submit, value:  "ENVIA" }
+
