@@ -77,8 +77,20 @@ $(function(){
     })
   }
 
+  function collaborador_beneficiario() {
+    $("[name=collaborador_beneficiario]").on("change", function(evt){
+      value = evt.target.value
+      if (value == "Colaborador")
+        $(".collaborator").show()
+      else
+        $(".collaborator").hide()
+    })
+  }
+
   bind_activities()
   do_changes()
   previous_answer()
+
+  collaborador_beneficiario()
 
 })

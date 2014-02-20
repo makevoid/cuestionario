@@ -39,11 +39,11 @@ body > form > h1 {
   left: 0;
   top: 0; }
 
-body > form > section {
+body > form section {
   width: 96%;
   margin: 0 auto; }
 
-body > form > section > h1 {
+body > form section > h1 {
   background: #6a92c7;
   color: white;
   padding-top: 0.2em;
