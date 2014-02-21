@@ -454,7 +454,7 @@ de creación de alianzas estratégicas regionales (colaboración con CTPT y SICA
 
 objectives = [
 
-"Contribuir a consecución del objetivo general y específico del Programa URB-AL III para incrementar la cohesión social y territorial en colectividades locales y regionales en América latina",
+"Contribuir a la consecución del objetivo general y específico del Programa URB-AL III para incrementar la cohesión social y territorial en colectividades locales y regionales en América latina",
 
 "Desarrollar e implementar un corredor turístico de integración de las zonas de frontera",
 
