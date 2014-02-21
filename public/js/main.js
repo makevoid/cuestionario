@@ -80,7 +80,7 @@ $(function(){
   function collaborador_beneficiario() {
     $("[name=collaborador_beneficiario]").on("change", function(evt){
       value = evt.target.value
-      if (value == "Colaborador")
+      if (value == "Ninguno")
         $(".collaborator").show()
       else
         $(".collaborator").hide()
