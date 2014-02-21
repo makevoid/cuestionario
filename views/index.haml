@@ -97,7 +97,7 @@
           - input "c. Su Función al tiempo en el cual participó en el proyecto (elija del listado a continuación)", selects[:functions]
 
           .activities_cont
-            - input "d. Actividades del Proyecto en las cuales usted ha participado (elija del listado a continuación marcando \"varias\" si usted participo' en todas o varias de ellas o elija una actividad especifica del listado si su participacion se centro' particularmente en ella)" , selects[:activities][0], name: :activities, multiple: true
+            - input "d. Actividades del Proyecto en las cuales usted ha participado (elija del listado a continuación marcando \"varias\" si usted participo' en todas o varias de ellas o elija una actividad especifica del listado si su participacion se centro' particularmente en esta)" , selects[:activities][0], name: :activities, multiple: true
           .note
             nota: presionar el tasto
             %strong ctrl
@@ -124,7 +124,7 @@
 
           - input "Considera usted que la organización para la realización de las actividades del #{strong_sel :project_names} fue?", ["muy adecuada", "adecuada", "poco adecuada", "inadecuada"], name: :organizacion
 
-          - input "De ser possible podría indicar poqué usted considera qua la organizacion del proyecto fue #{strong_sel_group :organizacion}"
+          - input "De ser possible podría indicar porqué usted considera qua la organizacion del proyecto fue #{strong_sel_group :organizacion}"
 
           - input "Considera usted que los medios puestos a disposición para la realización de las actividades del #{strong_sel :project_names} fueron?", ["abundantes", "adecuados", "insuficientes", "muy escasos"], name: :puestos
 
@@ -140,7 +140,7 @@
         %section
           %h1 6. Apreciación respecto a la durabilidad de los efectos del Proyecto
 
-          - input "Considera usted que los efectos esperados de #{strong_sel :objectives} se están manteniendo también en la actualidad, o se han perdido depsués de la finalización del Proyecto?", ["persisten totalmente", "persisten parcialmente", "se han perdido en mayoría"], name: :efectos
+          - input "Considera usted que los efectos esperados de #{strong_sel :objectives} se están manteniendo también en la actualidad, o se han perdido después de la finalización del Proyecto?", ["persisten totalmente", "persisten parcialmente", "se han perdido en mayoría"], name: :efectos
 
           - input "De ser posible podría indicar porqué usted considera que los efectos del Proyecto #{strong_sel_group :efectos}", tag: :area
 
