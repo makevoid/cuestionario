@@ -82,7 +82,7 @@
 
       %section
         %h1 a. Colaborador o beneficiario?
-        - input "Participó usted como colaborador o beneficiario de uno de los siguientes proyectos?", ["Colaborador", "Beneficiario"], name: :collaborador_beneficiario
+        - input "Participó usted como colaborador o beneficiario en uno de los proyectos de URB-AL III enumerados en el punto siguiente?", ["Colaborador", "Beneficiario", "Ninguno"], name: :collaborador_beneficiario
 
 
       .collaborator
@@ -114,7 +114,7 @@
 
           - input "Como considera usted que las actividades #{strong_sel_group :activities} en la(s) cual(es) usted participo' respondieron a las necesidades/prioridades de la población beneficaria del municipio/provincia donde se realizaron?", ["muy apropriadamente", "aprpriadamente", "eran poco apropiadas", "sin ninguna relación"], name: :pobolacion_beneficiaria
 
-          - input "De ser posible podría indicar poqué usted considera qua las actividades del proyecto respondieron #{strong_sel_group :pobolacion_beneficiaria} a las necesidades/prioridades de la población beneficaria?", tag: :area
+          - input "De ser posible podría indicar porqué usted considera qua las actividades del proyecto respondieron #{strong_sel_group :pobolacion_beneficiaria} a las necesidades/prioridades de la población beneficaria?", tag: :area
 
           - input "Enumere otras actividades que usted considera que devieron ser incluídas en el diseño del Proyecto para mejorar su impacto", tag: :area
 
@@ -126,9 +126,9 @@
 
           - input "De ser possible podría indicar poqué usted considera qua la organizacion del proyecto fue #{strong_sel_group :organizacion}"
 
-          - input "Considera usted que los medios puestos a disposición para la realización de las actividades del#{strong_sel :project_names} fueron?", ["abundantes", "adecuados", "insuficientes", "muy escasos"], name: :puestos
+          - input "Considera usted que los medios puestos a disposición para la realización de las actividades del #{strong_sel :project_names} fueron?", ["abundantes", "adecuados", "insuficientes", "muy escasos"], name: :puestos
 
-          - input "De ser posible podría indicar poqué usted considera que los medios puestos a disposición fueron #{strong_sel_group :puestos}", tag: :area
+          - input "De ser posible podría indicar porqué usted considera que los medios puestos a disposición fueron #{strong_sel_group :puestos}", tag: :area
 
         %section
           %h1 5. Apreciación respecto a los efectos del Proyecto
@@ -142,7 +142,7 @@
 
           - input "Considera usted que los efectos esperados de #{strong_sel :objectives} se están manteniendo también en la actualidad, o se han perdido depsués de la finalización del Proyecto?", ["persisten totalmente", "persisten parcialmente", "se han perdido en mayoría"], name: :efectos
 
-          - input "De ser posible podría indicar poqué usted considera que los efectos del Proyecto #{strong_sel_group :efectos}", tag: :area
+          - input "De ser posible podría indicar porqué usted considera que los efectos del Proyecto #{strong_sel_group :efectos}", tag: :area
 
           - input "Conoce usted algún otro gobierno municipal o intermedio que haya adoptado un proceso o política como los impulsados por el Proyecto?", ["si", "no", "no se"]
 
@@ -156,9 +156,9 @@
       %section
         %h1 8. Servicios brindados por la OCO
 
-        - input "Cómo valora los servicios brindados por la OCO en los cuales usted participó?", ["Excelente", "Muy bueno", "Bueno", "Regular", "Malo"]
+        - input "Cómo valora los servicios brindados por la OCO en los cuales usted participó?", ["Excelente", "Bueno", "Regular", "Malo"]
 
-        - input "Especifique por favor", tag: :area
+        - input "De der posible podria usted indicr porqué los servicios brindados por la OCO fueron #{strong_sel_group :efectos}", tag: :area
 
       // send
 
