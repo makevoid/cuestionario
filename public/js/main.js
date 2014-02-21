@@ -65,7 +65,7 @@ $(function(){
   }
 
   function previous_answer() {
-    var tags = ["efectos", "pobolacion_beneficiaria", "apreciacion_efectos", "organizacion", "puestos"]
+    var tags = ["efectos", "pobolacion_beneficiaria", "apreciacion_efectos", "organizacion", "puestos", "efectos", "servicios"]
     _(tags).each(function(tag){
       value = document.querySelector("[name="+tag+"]").value
       $("."+tag).html(value)
@@ -81,9 +81,9 @@ $(function(){
     $("[name=collaborador_beneficiario]").on("change", function(evt){
       value = evt.target.value
       if (value == "Ninguno")
-        $(".collaborator").show()
-      else
         $(".collaborator").hide()
+      else
+        $(".collaborator").show()
     })
   }
 
