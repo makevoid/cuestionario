@@ -90,7 +90,6 @@ $(function(){
   bind_activities()
   do_changes()
   previous_answer()
-
   collaborador_beneficiario()
 
 })

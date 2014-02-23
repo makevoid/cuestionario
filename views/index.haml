@@ -9,7 +9,7 @@
       alias :tag    :haml_tag
 
       def input_text(label, options)
-        tag :input
+        tag :input, options
       end
 
       def textarea(label, options)
@@ -68,16 +68,16 @@
 
       %section
         %h1 1. Informaciones sobre usted (la persona que responde al cuestionario)
-        - input "Nombre y apellido (no obligatorio)"
-        - input "Edad (años, en cifra)"
-        - input "Sexo", %w(M F)
-        - input "Lugar de residencia"
-        - input "Municipio"
-        - input "Provincia"
-        - input "País"
-        - input "Profesión"
-        - input "Instrucción", %w(primaria secundaria universitaria)
-        - input "Otra instrucción (especificar)"
+        - input "Nombre y apellido (no obligatorio)", name: :nombre
+        - input "Edad (años, en cifra)",              name: :edad
+        - input "Sexo", %w(M F),                      name: :sexo
+        - input "Lugar de residencia",                name: :lugar
+        - input "Municipio",                          name: :municipio
+        - input "Provincia",                          name: :provincia
+        - input "País",                               name: :pais
+        - input "Profesión",                          name: :profesion
+        - input "Instrucción", %w(primaria secundaria universitaria), name: :instruccion
+        - input "Otra instrucción (especificar)",     name: :otra_istruccion
 
 
       %section
@@ -94,7 +94,7 @@
           .partners
             - input "b. Socio del Proyecto con el cual usted ha participado (elija del listado a continuación)", selects[:partners][0], name: :partners
 
-          - input "c. Su Función al tiempo en el cual participó en el proyecto (elija del listado a continuación)", selects[:functions]
+          - input "c. Su Función al tiempo en el cual participó en el proyecto (elija del listado a continuación)", selects[:functions], name: "2c"
 
           .activities_cont
             - input "d. Actividades del Proyecto en las cuales usted ha participado (elija del listado a continuación marcando \"varias\" si usted participo' en todas o varias de ellas o elija una actividad especifica del listado si su participacion se centro' particularmente en esta)" , selects[:activities][0], name: :activities, multiple: true
@@ -106,17 +106,17 @@
         %section
           %h1 3. Apreciación respecto a la cocepción del Proyecto
 
-          - input "Participó usted en el diseño del Proyecto?", %w( si no )
+          - input "Participó usted en el diseño del Proyecto?", %w( si no ), name: "3a"
 
           - input "Señale de la siguiente lista que proceso o política de cohesión social fue impulsada en el marco del proyecto", selects[:politics], name: :politics
 
-          - input "Sabe usted si dicho proceso o política estaba ya priorizada en la institución participante?", ["priorizada", "no priorizada", "no se"]
+          - input "Sabe usted si dicho proceso o política estaba ya priorizada en la institución participante?", ["priorizada", "no priorizada", "no se"], name: "3c"
 
           - input "Como considera usted que las actividades #{strong_sel_group :activities} en la(s) cual(es) usted participo' respondieron a las necesidades/prioridades de la población beneficaria del municipio/provincia donde se realizaron?", ["muy apropriadamente", "aprpriadamente", "poco apropiadamente", "inapropiadamente"], name: :pobolacion_beneficiaria
 
-          - input "De ser posible podría indicar porqué usted considera qua las actividades del proyecto respondieron #{strong_sel_group :pobolacion_beneficiaria} a las necesidades/prioridades de la población beneficaria?", tag: :area
+          - input "De ser posible podría indicar porqué usted considera qua las actividades del proyecto respondieron #{strong_sel_group :pobolacion_beneficiaria} a las necesidades/prioridades de la población beneficaria?", tag: :area, name: "3e"
 
-          - input "Enumere otras actividades que usted considera que devieron ser incluídas en el diseño del Proyecto para mejorar su impacto", tag: :area
+          - input "Enumere otras actividades que usted considera que devieron ser incluídas en el diseño del Proyecto para mejorar su impacto", tag: :area, name: "3f"
 
 
         %section
@@ -124,40 +124,42 @@
 
           - input "Considera usted que la organización para la realización de las actividades del #{strong_sel :project_names} fue?", ["muy adecuada", "adecuada", "poco adecuada", "inadecuada"], name: :organizacion
 
-          - input "De ser possible podría indicar porqué usted considera qua la organizacion del proyecto fue #{strong_sel_group :organizacion}"
+          - input "De ser possible podría indicar porqué usted considera qua la organizacion del proyecto fue #{strong_sel_group :organizacion}", name: "4b"
 
           - input "Considera usted que los medios puestos a disposición para la realización de las actividades del #{strong_sel :project_names} fueron?", ["abundantes", "adecuados", "insuficientes", "muy escasos"], name: :puestos
 
-          - input "De ser posible podría indicar porqué usted considera que los medios puestos a disposición fueron #{strong_sel_group :puestos}", tag: :area
+          - input "De ser posible podría indicar porqué usted considera que los medios puestos a disposición fueron #{strong_sel_group :puestos}", tag: :area, name: "4d"
 
         %section
           %h1 5. Apreciación respecto a los efectos del Proyecto
 
           - input "Como considera usted que las actividades #{strong_sel_group :activities}  en la cuales usted ha participado contribuyeron al logro del Objetivo Especifico del Proyecto  que era de #{strong_sel :objectives}?", %w(mucho parcial poco nada), name: :apreciacion_efectos
 
-          - input "De ser posible podría indicar porqué usted considera que el nivel de contribución al Objetivo especifico fué #{strong_sel_group :apreciacion_efectos}", tag: :area
+          - input "De ser posible podría indicar porqué usted considera que el nivel de contribución al Objetivo especifico fué #{strong_sel_group :apreciacion_efectos}", tag: :area, name: "5b"
 
         %section
           %h1 6. Apreciación respecto a la durabilidad de los efectos del Proyecto
 
           - input "Considera usted que los efectos esperados de #{strong_sel :objectives} se están manteniendo también en la actualidad, o se han perdido después de la finalización del Proyecto?", ["persisten totalmente", "persisten parcialmente", "se han perdido en mayoría"], name: :efectos
 
-          - input "De ser posible podría indicar porqué usted considera que los efectos del Proyecto #{strong_sel_group :efectos}", tag: :area
+          - input "De ser posible podría indicar porqué usted considera que los efectos del Proyecto #{strong_sel_group :efectos}", tag: :area, name: "6b"
 
-          - input "Conoce usted algún otro gobierno municipal o intermedio que haya adoptado un proceso o política como los impulsados por el Proyecto?", ["si", "no", "no se"]
+          - input "Conoce usted algún otro gobierno municipal o intermedio que haya adoptado un proceso o política como los impulsados por el Proyecto?", ["si", "no", "no se"], name: "6c"
 
-          - input "En caso afirmativo podria indicar cual(es)?", tag: :area
+          - input "En caso afirmativo podria indicar cual(es)?", tag: :area, name: "6d"
 
       %section
         %h1 7. Servicios prestados por la OCO
 
-        - input "Participó usted en alguno de los siguientes servicios prestados por la OCO?", ["Diálogos regionales", "URBsociAL", "Encuentros de Capitalización", "Seminarios", "Plataforma de Liderazgo Local"]
+        - input "Participó usted en alguno de los siguientes servicios prestados por la OCO?", ["Diálogos regionales", "URBsociAL", "Encuentros de Capitalización", "Seminarios", "Plataforma de Liderazgo Local"], name: :servicios_prestados
 
       %section
         %h1 8. Servicios brindados por la OCO
         - input "Cómo valora los servicios brindados por la OCO en los cuales usted participó?", ["Excelentes", "Buenos", "Regulares", "Malos"], name: :servicios
 
-        - input "De ser posible podria usted indicar porqué los servicios brindados por la OCO fueron #{strong_sel_group :servicios}", tag: :area
+        - input "De ser posible podria usted indicar porqué los servicios brindados por la OCO fueron #{strong_sel_group :servicios}", tag: :area, name: "8b"
+
+      %input{ type: :hidden, name: :start_time, value: Time.now.to_s }
 
       // send
 
