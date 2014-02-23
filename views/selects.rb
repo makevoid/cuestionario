@@ -3,7 +3,6 @@ def str_format(str)
 end
 
 project_names = <<-STR
-Proyecto Oficina de Coordinación OCO (Coordinada por Diputación de Barcelona)
 Proyecto Fronteras Turísticas (coordinado por Frosinone, Italia)
 Proyecto emiDel (coordinado por L’Hospitalet de Llobregat, España)
 Proyecto La basura sirve (coordinado por Arezzo, Italia)
@@ -24,6 +23,7 @@ Proyecto RESSOC (coordinado por Área Metropolitana de Barcelona, España)
 Proyecto IDEAL (coordinado por Michoacán, México)
 Proyecto GIT (coordinado por Puerto Cortés, Honduras)
 Proyecto Integración Regional (coordinado por Mancomunidad Trinacional Fronteriza Río Lempa, Guatemala)
+Proyecto Oficina de Coordinación OCO (Coordinada por Diputación de Barcelona)
 STR
 
 functions = <<STR
@@ -37,14 +37,6 @@ Asesor/consultor
 STR
 
 partners = [
-%{Diputación de Barcelona (España)
-Fundación Internacional y para Iberoamérica de Administración y Políticas Públicas (FIIAPP, Madrid)
-Región de Toscana (Italia)
-Observatorio Interregional para la Cooperación al Desarrollo (OICS, Roma)
-Municipalidad de San José (Costa Rica)
-Alcaldía Mayor de Bogotá (Colombia)
-Gobierno de la Provincia de Santa Fe (Argentina).},
-
 %{Provincia de Frosinone (Italia)
 Provincia Autónoma de Bolzano (Italia)
 Comisión Municipal de Purmamarca (Argentina)
@@ -231,17 +223,17 @@ Asociación de Municipios Trifinio (El Salvador)
 Asociación de Municipios Cayaguanca (El Salvador)
 Diputación Provincial de Huelva (España)
 Región de Lombardia (Italia)},
+
+%{Diputación de Barcelona (España)
+Fundación Internacional y para Iberoamérica de Administración y Políticas Públicas (FIIAPP, Madrid)
+Región de Toscana (Italia)
+Observatorio Interregional para la Cooperación al Desarrollo (OICS, Roma)
+Municipalidad de San José (Costa Rica)
+Alcaldía Mayor de Bogotá (Colombia)
+Gobierno de la Provincia de Santa Fe (Argentina).},
 ]
 
 activities = [
-
-%{varias
-de asegurar la coordinación y el buen funcionamiento de los proyectos del Lote1
-de asegurar la coherencia de las acciones del Lote 1 entre sí y con los objetivo sdel Lote1
-de promover la reflexión estratégica sobre las políticas locales y regionales de cohesión soonal
-de favorecer la visibilidad de las experiencias y las buenas prácticas surgidas  de las acciones del Programa
-de crear y animar una Red de gobiernos subnacionales, y otros actores, comprometidos con la cohesión social},
-
 %{varias
 de asistencia a emprendedores turísticos
 de capacitación a prestadores de servicios turísticos no estatales
@@ -449,13 +441,15 @@ de creación de instrumentos de diálogo y concertación: Mesa de Gerentes de la
 de creación de instrumentos para el fortalecimiento institucional: OPLAGEST, PIDET y SINTET
 de creación de alianzas estratégicas regionales (colaboración con CTPT y SICA) y con varios actores territoriales},
 
-
+%{varias
+de asegurar la coordinación y el buen funcionamiento de los proyectos del Lote1
+de asegurar la coherencia de las acciones del Lote 1 entre sí y con los objetivo sdel Lote1
+de promover la reflexión estratégica sobre las políticas locales y regionales de cohesión soonal
+de favorecer la visibilidad de las experiencias y las buenas prácticas surgidas  de las acciones del Programa
+de crear y animar una Red de gobiernos subnacionales, y otros actores, comprometidos con la cohesión social},
 ]
 
 objectives = [
-
-"Contribuir a la consecución del objetivo general y específico del Programa URB-AL III para incrementar la cohesión social y territorial en colectividades locales y regionales en América latina",
-
 "Desarrollar e implementar un corredor turístico de integración de las zonas de frontera",
 
 "Incrementar las capacidades de los gobiernos locales para apoyar y promover a los emprendedores",
@@ -495,6 +489,8 @@ objectives = [
 "Mejorar la Seguridad Jurídica de los derechos de la propiedad inmueble de los municipios",
 
 "Contribuir a la Cohesión Social y la gestión transfronteriza",
+
+"Contribuir a la consecución del objetivo general y específico del Programa URB-AL III para incrementar la cohesión social y territorial en colectividades locales y regionales en América latina",
 
 ]
 
