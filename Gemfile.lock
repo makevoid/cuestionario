@@ -26,8 +26,13 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     lumberjack (1.0.4)
+    mail (2.5.4)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
     method_source (0.8.2)
+    mime-types (1.25.1)
     nio4r (1.0.0)
+    polyglot (0.3.3)
     pry (0.9.12.6)
       coderay (~> 1.0)
       method_source (~> 0.8)
@@ -47,6 +52,9 @@ GEM
     thor (0.18.1)
     tilt (1.4.1)
     timers (1.1.0)
+    treetop (1.4.15)
+      polyglot
+      polyglot (>= 0.3.1)
 
 PLATFORMS
   ruby
@@ -54,4 +62,5 @@ PLATFORMS
 DEPENDENCIES
   guard-sass
   haml
+  mail
   sinatra
