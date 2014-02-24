@@ -4,7 +4,8 @@ gem "haml"
 #gem 'tilt', '~> 1.4.1'
 gem "sinatra"
 
-gem "rack-contrib", require: false
+#gem "tmail"
+#gem "rack-contrib", require: false
 
 group :development do
   #	gem "guard-haml"

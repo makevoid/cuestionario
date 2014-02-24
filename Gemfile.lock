@@ -49,6 +49,7 @@ GEM
     thor (0.18.1)
     tilt (1.4.1)
     timers (1.1.0)
+    tmail (1.2.7.1)
 
 PLATFORMS
   ruby
@@ -58,3 +59,4 @@ DEPENDENCIES
   haml
   rack-contrib
   sinatra
+  tmail

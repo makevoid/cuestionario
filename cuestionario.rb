@@ -3,21 +3,21 @@ require "#{path}/config/env"
 
 class Cuestionario < Sinatra::Base
 
-  require 'rack/contrib/mailexceptions'
+  # require 'rack/contrib/mailexceptions'
 
-  @@pass = (File.read File.expand_path "~/.password").strip.gsub(/33/, '')
-  use Rack::MailExceptions do |mail|
-    mail.to 'makevoid@gmail.com'
-    mail.subject '[ERROR] %s'
-    mail.smtp {
-      server:         'smtp.gmail.com',
-      domain:         'gmail.com',
-      port:           587,
-      authentication: 'plain',
-      user_name:      'm4kevoid@gmail.com',
-      password:       @@pass
-    }
-  end
+  # @@pass = (File.read File.expand_path "~/.password").strip.gsub(/33/, '')
+  # use Rack::MailExceptions do |mail|
+  #   mail.to 'makevoid@gmail.com'
+  #   mail.subject '[ERROR] %s'
+  #   mail.smtp(
+  #     server:         'smtp.gmail.com',
+  #     domain:         'gmail.com',
+  #     port:           587,
+  #     authentication: 'plain',
+  #     user_name:      'm4kevoid@gmail.com',
+  #     password:       @@pass
+  #   )
+  # end
 
   get "/" do
     raise "asda"
@@ -34,7 +34,5 @@ class Cuestionario < Sinatra::Base
 
   get "/exception" do
     raise "testing exception"
-
   end
-
 end
