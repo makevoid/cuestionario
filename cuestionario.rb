@@ -3,7 +3,9 @@ require "#{path}/config/env"
 
 class Cuestionario < Sinatra::Base
 
-  require "#{PATH}/lib/mail_exceptions"
+  @@path = PATH
+
+  require "#{@@path}/lib/mail_exceptions"
 
   @@pass = (File.read File.expand_path "~/.password").strip.gsub(/33/, '')
   use Rack::MailExceptions do |mail|
@@ -33,5 +35,10 @@ class Cuestionario < Sinatra::Base
 
   get "/exception" do
     raise "testing exception"
+  end
+
+
+  get "/results" do
+    File.read "#{@@path}/db/causes.json"
   end
 end
