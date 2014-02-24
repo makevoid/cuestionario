@@ -20,7 +20,6 @@ class Cuestionario < Sinatra::Base
   # end
 
   get "/" do
-    raise "asda"
     haml :index
   end
 
