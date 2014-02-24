@@ -4,5 +4,6 @@ PATH = path
 require "bundler/setup"
 Bundler.require :default
 
+
 require 'json'
 require "#{path}/lib/db"

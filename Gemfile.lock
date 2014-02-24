@@ -33,6 +33,8 @@ GEM
       method_source (~> 0.8)
       slop (~> 3.4)
     rack (1.5.2)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-protection (1.5.2)
       rack
     rb-fsevent (0.9.4)
@@ -54,4 +56,5 @@ PLATFORMS
 DEPENDENCIES
   guard-sass
   haml
+  rack-contrib
   sinatra

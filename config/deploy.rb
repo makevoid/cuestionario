@@ -12,7 +12,7 @@ set :deploy_to,   "/www/#{app_name}"
 set :repository,  "git@github.com:makevoid/#{app_name}"
 set :branch,      'master'
 
-set :shared_paths, ['log']
+set :shared_paths, ['log', "db"]
 
 set :user, 'www-data'
 
