@@ -7,18 +7,20 @@ class Cuestionario < Sinatra::Base
 
   require "#{@@path}/lib/mail_exceptions"
 
-  @@pass = (File.read File.expand_path "~/.password").strip.gsub(/33/, '')
-  use Rack::MailExceptions do |mail|
-    mail.to 'makevoid@gmail.com'
-    mail.subject '[ERROR] %s'
-    mail.smtp(
-      server:         'smtp.gmail.com',
-      domain:         'gmail.com',
-      port:           587,
-      authentication: 'plain',
-      user_name:      'm4kevoid@gmail.com',
-      password:       @@pass
-    )
+  if ENV["RACK_ENV"] == "production"
+    @@pass = (File.read File.expand_path "~/.password").strip.gsub(/33/, '')
+    use Rack::MailExceptions do |mail|
+      mail.to 'makevoid@gmail.com'
+      mail.subject '[ERROR] %s'
+      mail.smtp(
+        server:         'smtp.gmail.com',
+        domain:         'gmail.com',
+        port:           587,
+        authentication: 'plain',
+        user_name:      'm4kevoid@gmail.com',
+        password:       @@pass
+      )
+    end
   end
 
   get "/" do
@@ -37,8 +39,16 @@ class Cuestionario < Sinatra::Base
     raise "testing exception"
   end
 
+  require 'csv'
+  get "/results.csv" do
+    content_type :csv
+    results = File.read "#{@@path}/db/causes.json"
+    results = JSON.parse results
+    results.each_with_object([]) { |i,mem| mem << i.to_a}.flatten.to_csv
+  end
 
   get "/results" do
+    content_type :json
     File.read "#{@@path}/db/causes.json"
   end
 end
