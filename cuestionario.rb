@@ -44,11 +44,23 @@ class Cuestionario < Sinatra::Base
     content_type :csv
     results = File.read "#{@@path}/db/causes.json"
     results = JSON.parse results
-    results.each_with_object([]) { |i,mem| mem << i.to_a}.flatten.to_csv
+    CSV.generate(col_sep: ",") do |csv|
+      csv << results[0].keys
+      for result in results
+        csv << result.values
+      end
+    end
   end
 
   get "/results" do
     content_type :json
     File.read "#{@@path}/db/causes.json"
+  end
+
+  get "/stats" do
+    content_type :json
+    file = File.read "#{@@path}/db/causes.json"
+    results = JSON.parse file
+    { count: results.size, last: results.last["start_time"] }.to_json
   end
 end
