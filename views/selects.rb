@@ -1,6 +1,4 @@
-def str_format(str)
-  str.split("\n").map{ |s| s.strip }
-end
+
 
 project_names = <<-STR
 Proyecto Fronteras Turísticas (coordinado por Frosinone, Italia)

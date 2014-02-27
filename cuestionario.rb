@@ -23,8 +23,72 @@ class Cuestionario < Sinatra::Base
     end
   end
 
+
+  helpers do
+    include Haml::Helpers
+    alias :write  :haml_concat
+    alias :tag    :haml_tag
+
+    def input_text(label, options)
+      tag :input, options
+    end
+
+    def textarea(label, options)
+      tag :textarea, options
+    end
+
+    def select(label, choices, options)
+      tag :select, options do
+        choices.each do |choice|
+          tag :option do
+            write choice
+          end
+        end
+      end
+    end
+
+    def input(label, options={}, options2={})
+      tag :label do
+        write label
+        if options.is_a? Array
+            select label, options, options2
+        elsif options[:tag] == :area
+          textarea label, options
+        else
+          input_text label, options
+        end
+      end
+    end
+
+    def self.str_format(str)
+      str.split("\n").map{ |s| s.strip }
+    end
+
+    # import datas
+    selects = eval(File.read "views/selects.rb")
+    SELECTS = selects
+
+    def selects
+      SELECTS
+    end
+
+    require 'json'
+
+    def strong_sel(name)
+      "<strong class='#{name}'>#{SELECTS[name][0]}</strong>"
+    end
+
+    def strong_sel_group(name)
+      "<strong class='#{name}'>...</strong>"
+    end
+  end
+
   get "/" do
     haml :index
+  end
+
+  get "/eurosolar" do
+    haml :eurosolar
   end
 
   post "/submit" do

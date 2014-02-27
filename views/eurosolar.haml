@@ -1,0 +1,115 @@
+%form{ action: "/submit", method: :post }
+  %h1 CUESTIONARIO DIRIGIDO A LAS COMUNIDADES BENEFICIARIAS DEL PROGRAMA EUROSOLAR
+
+  %section
+    %h1 GENERAL
+    - input "Nombre de la Comunidad", name: :nombre_comunidad
+    - input "Nombre  de la persona que responde al cuestionario", name: :nombre
+    - input "Cargo en la Comunidad en relación al Programa EUROSOLAR", name: :cargo
+
+
+  %section
+    %h1
+      PERTINENCIA
+      %span Pertinencia a nivel de cada país
+
+    %section
+      %h1 Pertinencia institucional
+      - input "Cuál fue la respuesta de la organización comunal, la municipalidad cuando se les invitó a participar en el proyecto? (trataron de colaborar? hubo resistencias?)", tag: :area
+    %section
+      %h1 Pertinencia geográfica
+      - input "Cómo fue invitada a participar su Comunidad en el Programa EUROSOLAR?, En su opinión para la Comunidad el Programa EUROSOLAR tenía como objetivo i) llevar energía a la comunidad, ii) mejorar la educación y la salud? iii) mejorar la comunicación con el exterior; iv) generar ingreso y recursos? Porqué?", tag: :area
+      - input "Porqué razones fue seleccionada su comunidad como beneficiaria del programa EUROSOLAR?", tag: :area
+    %section
+      %h1 Pertinencia operativa
+      - input "En su opinión la calidad del equipamiento instalado en su comunidad es adecuada?", tag: :area
+    %section
+      %h1 Temas transversales
+      - input "Desde el principio participaron tanto mujeres como hombres del a comunidad en el proyecto? ", tag: :area
+    %section
+      %h1 Previsión de la sostenibilidad
+      - input "La comunidad tenía claro desde el inicio del proyecto que había que buscar los medios para que los equipos duraran en el tiempo?", tag: :area
+
+  %section
+    %h1
+      EFICIENCIA
+      %span Eficiencia en la ejecución local
+
+    - input "Los habitantes de la comunidad fueron informados suficientemente de la utilidad del proyecto al inicio?", tag: :area
+    - input "La capacitación que han recibido en la Comunidad para el manejo de los equipos ha sido suficiente, cercana y útil?", tag: :area
+    - input "Cómo se realizó la conexión a internet, que calidad ha tenido este servicio hasta la fecha?", tag: :area
+    - input "La comunidad participó en los trabajos de construcción para poner en funcionamiento el kit EUROSOLAR? Se organizó en la Comunidad algún tipo de comité de coordinación para dar seguimiento a las actividades del proyecto? Quienes formaban ese comité de coordinación?", tag: :area
+
+
+  %section
+    %h1
+      EFICACIA
+
+    - input "En su opinión ¿a qué aspecto ha contribuido más el kit instalado en la Comunidad? (mejora de la educación, de las condiciones de salud, de la comunicación de la comunidad con el exterior, a generar oportunidades de ingreso?", tag: :area
+
+    %section
+      %h1 Efectos en la Educación
+      - input "¿Para qué  actividades educativas se utilizan los laptops? Están siendo todos utilizados? Están conectados a internet?", tag: :area
+      - input "¿Cuántos son los alumnos que utilizan los laptops?", tag: :area
+      - input "¿Durante cuántas horas diarias o semanales se utilizan los laptops?", tag: :area
+      - input "¿Qué programas informáticos educativos se usan en los laptops? Necesitan conexión a internet?", tag: :area
+      - input "¿Se nota un, mayor  interés o mejor nivel educativo, desde que se usan los laptops en la escuela?", tag: :area
+
+    %section
+      %h1 Efectos en la Salud
+      - input "¿Se han podido instalar convenientemente la refrigeradora para uso sanitario y el purificador de agua? Son estos utilizados?", tag: :area
+      - input "¿Qué uso se les está dando a estos aparatos?", tag: :area
+      - input "¿Qué efectos han sido observados gracias al uso de estos aparatos? (acceso a medicamentos mayor, menores enfermedades, mejora de la salud…)", tag: :area
+
+    %section
+      %h1 Efectos en desarrollo socioeconómico
+      - input "¿Gracias al kit Eurosolar se han podido arrancar proyectos de generación de ingresos en la comunidad? Cuáles?", tag: :area
+      - input "¿Son estas iniciativas llevadas de forma comunitaria por toda la comunidad o por algunos individuos o grupos?", tag: :area
+
+    %section
+      %h1 Efectos energéticos
+      - input "¿Conocen de otras experiencias en la zona que hayan tomado el ejemplo de su comunidad y hayan instalado placas solares? Cuál es el grado de interés de otras comunidades en la experiencia de su comunidad?", tag: :area
+
+
+  %section
+    %h1 IMPACTO
+    - input "Qué efectos generales ha tenido el proyecto para la mejora de la calidad de la vida de la Comunidad?", tag: :area
+
+
+  %section
+    %h1
+      SOSTENIBILIDAD
+
+    %section
+      %h1 Sostenibilidad institucional
+      - input "Que autoridades acompañan y apoyan ahora a la Comunidad para mantener el equipo?", tag: :area
+
+    %section
+      %h1 Sostenibilidad social
+      - input "¿Quién forma parte ahora de la organización de la comunidad encargada del kit eurosolar?", tag: :area
+      - input "¿Quienes son, entre los miembros de la comunidad, los que apoyan mayormente las actividades relacionadas con la instalación de Eurosolar: los alumnos, otros jóvenes, los enseñantes, los padres de familia, los empresarios?", tag: :area
+      - input "¿Cuál es la participación de las, niñas  jóvenes y señoras en el uso de las instalaciones de Euroslar?", tag: :area
+
+    %section
+      %h1 Sostenibilidad técnica
+      - input "¿Están funcionando bien los equipos?", tag: :area
+      - input "¿Tienen conexión a internet?", tag: :area
+      - input "¿La comunidad está responsabilizada en el mantenimiento de los equipos?", tag: :area
+
+    %section
+      %h1 Sostenibilidad financiera
+      - input "¿Qué autoridades están dando apoyo económico para mantener el equipo e instalaciones?", tag: :area
+      - input "¿Se generan fondos propios a partir de la utilización de los equipos en la Comunidad? Son suficientes para costear el mantenimiento?", tag: :area
+      - input "¿Quien paga el servicio de internet?", tag: :area
+
+    %section
+      %h1 Sostenibilidad ambiental
+      - input "¿Han contribuido los contenidos de la información y formación vía internet al aumento de la concientización en favor de la conservación del medio ambiente?", tag: :area
+
+  %input{ type: :hidden, name: :start_time, value: Time.now.to_s }
+
+  // send
+
+  %section
+    %p Una vez terminado de rellenar el cuestionario presione el botón ENVIA.
+    %input{ type: :submit, value:  "ENVIA" }
