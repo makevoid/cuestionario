@@ -46,21 +46,23 @@
     %h1
       EFICACIA
 
-    - input "En su opinión ¿a qué aspecto ha contribuido más el kit instalado en la Comunidad? (mejora de la educación, de las condiciones de salud, de la comunicación de la comunidad con el exterior, a generar oportunidades de ingreso?", tag: :area
+    - input "En su opinión ¿a qué aspecto ha contribuido más el kit instalado en la Comunidad? ["mejora de la educación", "de las condiciones de salud", "de la comunicación de la comunidad con el exterior", "a generar oportunidades de ingreso", "otro"], tag: :area
 
     %section
       %h1 Efectos en la Educación
-      - input "¿Para qué  actividades educativas se utilizan los laptops? Están siendo todos utilizados? Están conectados a internet?", tag: :area
-      - input "¿Cuántos son los alumnos que utilizan los laptops?", tag: :area
-      - input "¿Durante cuántas horas diarias o semanales se utilizan los laptops?", tag: :area
-      - input "¿Qué programas informáticos educativos se usan en los laptops? Necesitan conexión a internet?", tag: :area
-      - input "¿Se nota un, mayor  interés o mejor nivel educativo, desde que se usan los laptops en la escuela?", tag: :area
+      - input "¿Para qué  actividades educativas se utilizan los laptops? ["para los cursos ordinarios", "para investigaciones y profundizaciones", "para la información", "para el juego y la recreación", "otro"], tag: :area
+      - input "¿Están siendo todos utilizados? ["toso el tiempo", "solamente durante ciertos días y horas", "muy esporádicamente", "nunca", "otro"], tag: :area 
+      - input "¿Están conectados a internet?"["están conectados con frecuencia", "están conectados esporádicamente", "estuvieron conectados pero ya no", "nunca estuvieron conectados", "otro"], tag: :area
+      - input "¿Cuántos son los alumnos que utilizan los laptops?", ["todos los alumnos de la escuela", "solo los de ciertos grados", "otro"] tag: :area
+      - input "¿Qué programas informáticos educativos se usan en los laptops? ["programas estándar (Windows, Office)", "aplicaciones y contenidos educativos específicos", "juegos y contenidos recreativos", "otro"], tag: :area
+      - input "¿Necesitan conexión a internet?" ["si permanente", "solo para ciertas funciones", "no necesitan conexión", "otro"], tag: :area   
+      - input "¿Se nota un, mayor  interés o mejor nivel educativo, desde que se usan los laptops en la escuela?", ["mayor nivel de preparación", "mayor interés y motivación", "ninguna mejora", "otro"], tag: :area
 
     %section
       %h1 Efectos en la Salud
-      - input "¿Se han podido instalar convenientemente la refrigeradora para uso sanitario y el purificador de agua? Son estos utilizados?", tag: :area
-      - input "¿Qué uso se les está dando a estos aparatos?", tag: :area
-      - input "¿Qué efectos han sido observados gracias al uso de estos aparatos? (acceso a medicamentos mayor, menores enfermedades, mejora de la salud…)", tag: :area
+      - input "¿Se han podido instalar convenientemente la refrigeradora para uso sanitario y el purificador de agua? ["en el centro de salud", "en otro edificio", "no se han instalados", "otro"], tag: :area
+      - input "¿Es la refrigeradora utilizada?" ["para la conservación de vacunas y medicamentos", "para la conservación de otros productos", "no es utilizada", "otro"], tag: :area
+      - input "¿Qué efectos han sido observados gracias al uso de estos aparatos?", ["acceso a medicamentos mayor", "menores enfermedades", "mejora de la salud", "otro"}, tag: :area
 
     %section
       %h1 Efectos en desarrollo socioeconómico
