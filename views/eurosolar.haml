@@ -35,12 +35,13 @@
       EFICIENCIA
       %span Eficiencia en la ejecución local
 
-    - input "Los habitantes de la comunidad fueron informados suficientemente de la utilidad del proyecto al inicio?", tag: :area
-    - input "La capacitación que han recibido en la Comunidad para el manejo de los equipos ha sido suficiente, cercana y útil?", tag: :area
-    - input "Cómo se realizó la conexión a internet, que calidad ha tenido este servicio hasta la fecha?", tag: :area
-    - input "La comunidad participó en los trabajos de construcción para poner en funcionamiento el kit EUROSOLAR? Se organizó en la Comunidad algún tipo de comité de coordinación para dar seguimiento a las actividades del proyecto? Quienes formaban ese comité de coordinación?", tag: :area
-
-
+    - input "Los habitantes de la comunidad fueron informados  de la utilidad del proyecto al inicio?" ["suficientemente", "parcialmente", "poco", "nada"], tag: :area
+    - input "Cómo ha sido la capacitación que han recibido en la Comunidad para el manejo de los equipos?" ["suficiente", "a penas suficiente", "insuficiente", "no ha habido capacitación"], tag: :area
+    - input "Cómo se realizó la conexión a internet, que calidad ha tenido este servicio hasta la fecha?" ["por antena sateltal", "por la linea de teléfono movil", "otro", "no ha habido conexión"], tag: :area
+    - input "La comunidad participó en los trabajos de construcción para poner en funcionamiento el kit EUROSOLAR?" ["en la adecuación de los edificios", "en la provisión del mobiliario", "en la instalación de los equipos", "no se participó", "otro"], tag: :area
+    - input "Se organizó en la Comunidad algún tipo de comité de coordinación para dar seguimiento a las actividades del proyecto?" ["si, desde antes de la instalación de los equipos", "si, después de la instalación de los equipos", "no se organizó ningún comité", "otro"], tag: :area
+    - input "Quienes formaban ese comité de coordinación?" ["solamente los docentes de la escuela", "docentes y padres de fiamila", "varios integrantes de la comunidad", "otro"], tag: :area
+  
   %section
     %h1
       EFICACIA
