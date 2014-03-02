@@ -1,5 +1,6 @@
 :ruby
-  csv = File.read "db/q2_comunitades.csv"
+  # encoding: utf-8
+  # csv = File.read "db/q2_comunitades.csv"
 
 
 %form{ action: "/submit", method: :post }
@@ -19,54 +20,54 @@
 
     %section
       %h1 Pertinencia institucional
-      - input "Cuál fue la respuesta de la comunidad cuando se les invitó a participar en el proyecto?" ["hubo resistencia", "trataron de colaborar", "otro"], tag: :area
+      - input "Cuál fue la respuesta de la comunidad cuando se les invitó a participar en el proyecto?", ["hubo resistencia", "trataron de colaborar", "otro"]
     %section
       %h1 Pertinencia geográfica
-      - input "En su opinión para la Comunidad el Programa EUROSOLAR tenía como objetivo?" ["llevar energía a la comunidad", "mejorar la educación y la salud", "mejorar la comunicación con el exterior", "generar ingreso y recursos", "otro"], tag: :area
-      - input "Porqué razones fue seleccionada su comunidad como beneficiaria del programa EUROSOLAR?" ["no tiene energía", "está muy aislada", "había un fuerte compromiso de la gente", "otro"], tag: :area
+      - input "En su opinión para la Comunidad el Programa EUROSOLAR tenía como objetivo?", ["llevar energía a la comunidad", "mejorar la educación y la salud", "mejorar la comunicación con el exterior", "generar ingreso y recursos", "otro"]
+      - input "Porqué razones fue seleccionada su comunidad como beneficiaria del programa EUROSOLAR?", ["no tiene energía", "está muy aislada", "había un fuerte compromiso de la gente", "otro"]
     %section
       %h1 Pertinencia operativa
-      - input "En su opinión la calidad del equipamiento instalado en su comunidad es?" ["muy adecuada", "bastante adecuada", "poco adecuada", "inadecuada"], tag: :area
+      - input "En su opinión la calidad del equipamiento instalado en su comunidad es?", ["muy adecuada", "bastante adecuada", "poco adecuada", "inadecuada"]
     %section
       %h1 Temas transversales
-      - input "Desde el principio participaron tanto mujeres como hombres de la comunidad en el proyecto?" ["solo hombres", "mayormente hombres", "hombres y mujeres", "mayormente mujeres", "otro"], tag: :area
+      - input "Desde el principio participaron tanto mujeres como hombres de la comunidad en el proyecto?", ["solo hombres", "mayormente hombres", "hombres y mujeres", "mayormente mujeres", "otro"]
     %section
       %h1 Previsión de la sostenibilidad
-      - input "La comunidad tenía claro desde el inicio del proyecto de donde procederían los medios para que los equipos duraran en el tiempo?" ["del estado", "de los municipios", "de la misma comunidad", "otro"], tag: :area
+      - input "La comunidad tenía claro desde el inicio del proyecto de donde procederían los medios para que los equipos duraran en el tiempo?", ["del estado", "de los municipios", "de la misma comunidad", "otro"]
 
   %section
     %h1
       EFICIENCIA
       %span Eficiencia en la ejecución local
 
-    - input "Los habitantes de la comunidad fueron informados  de la utilidad del proyecto al inicio?" ["suficientemente", "parcialmente", "poco", "nada"], tag: :area
-    - input "Cómo ha sido la capacitación que han recibido en la Comunidad para el manejo de los equipos?" ["suficiente", "a penas suficiente", "insuficiente", "no ha habido capacitación"], tag: :area
-    - input "Cómo se realizó la conexión a internet, que calidad ha tenido este servicio hasta la fecha?" ["por antena sateltal", "por la linea de teléfono movil", "otro", "no ha habido conexión"], tag: :area
-    - input "La comunidad participó en los trabajos de construcción para poner en funcionamiento el kit EUROSOLAR?" ["en la adecuación de los edificios", "en la provisión del mobiliario", "en la instalación de los equipos", "no se participó", "otro"], tag: :area
-    - input "Se organizó en la Comunidad algún tipo de comité de coordinación para dar seguimiento a las actividades del proyecto?" ["si, desde antes de la instalación de los equipos", "si, después de la instalación de los equipos", "no se organizó ningún comité", "otro"], tag: :area
-    - input "Quienes formaban ese comité de coordinación?" ["solamente los docentes de la escuela", "docentes y padres de fiamila", "varios integrantes de la comunidad", "otro"], tag: :area
-  
+    - input "Los habitantes de la comunidad fueron informados  de la utilidad del proyecto al inicio?", ["suficientemente", "parcialmente", "poco", "nada"]
+    - input "Cómo ha sido la capacitación que han recibido en la Comunidad para el manejo de los equipos?", ["suficiente", "a penas suficiente", "insuficiente", "no ha habido capacitación"]
+    - input "Cómo se realizó la conexión a internet, que calidad ha tenido este servicio hasta la fecha?", ["por antena sateltal", "por la linea de teléfono movil", "otro", "no ha habido conexión"]
+    - input "La comunidad participó en los trabajos de construcción para poner en funcionamiento el kit EUROSOLAR?", ["en la adecuación de los edificios", "en la provisión del mobiliario", "en la instalación de los equipos", "no se participó", "otro"]
+    - input "Se organizó en la Comunidad algún tipo de comité de coordinación para dar seguimiento a las actividades del proyecto?", ["si, desde antes de la instalación de los equipos", "si, después de la instalación de los equipos", "no se organizó ningún comité", "otro"]
+    - input "Quienes formaban ese comité de coordinación?", ["solamente los docentes de la escuela", "docentes y padres de fiamila", "varios integrantes de la comunidad", "otro"]
+
   %section
     %h1
       EFICACIA
 
-    - input "En su opinión ¿a qué aspecto ha contribuido más el kit instalado en la Comunidad? ["mejora de la educación", "de las condiciones de salud", "de la comunicación de la comunidad con el exterior", "a generar oportunidades de ingreso", "otro"], tag: :area
+    - input "En su opinión ¿a qué aspecto ha contribuido más el kit instalado en la Comunidad?", ["mejora de la educación", "de las condiciones de salud", "de la comunicación de la comunidad con el exterior", "a generar oportunidades de ingreso", "otro"]
 
     %section
       %h1 Efectos en la Educación
-      - input "¿Para qué  actividades educativas se utilizan los laptops? ["para los cursos ordinarios", "para investigaciones y profundizaciones", "para la información", "para el juego y la recreación", "otro"], tag: :area
-      - input "¿Están siendo todos utilizados? ["toso el tiempo", "solamente durante ciertos días y horas", "muy esporádicamente", "nunca", "otro"], tag: :area 
-      - input "¿Están conectados a internet?"["están conectados con frecuencia", "están conectados esporádicamente", "estuvieron conectados pero ya no", "nunca estuvieron conectados", "otro"], tag: :area
-      - input "¿Cuántos son los alumnos que utilizan los laptops?", ["todos los alumnos de la escuela", "solo los de ciertos grados", "otro"] tag: :area
-      - input "¿Qué programas informáticos educativos se usan en los laptops? ["programas estándar (Windows, Office)", "aplicaciones y contenidos educativos específicos", "juegos y contenidos recreativos", "otro"], tag: :area
-      - input "¿Necesitan conexión a internet?" ["si permanente", "solo para ciertas funciones", "no necesitan conexión", "otro"], tag: :area   
-      - input "¿Se nota un, mayor  interés o mejor nivel educativo, desde que se usan los laptops en la escuela?", ["mayor nivel de preparación", "mayor interés y motivación", "ninguna mejora", "otro"], tag: :area
+      - input "¿Para qué  actividades educativas se utilizan los laptops?", ["para los cursos ordinarios", "para investigaciones y profundizaciones", "para la información", "para el juego y la recreación", "otro"]
+      - input "¿Están siendo todos utilizados?", ["toso el tiempo", "solamente durante ciertos días y horas", "muy esporádicamente", "nunca", "otro"]
+      - input "¿Están conectados a internet?", ["están conectados con frecuencia", "están conectados esporádicamente", "estuvieron conectados pero ya no", "nunca estuvieron conectados", "otro"]
+      - input "¿Cuántos son los alumnos que utilizan los laptops?", ["todos los alumnos de la escuela", "solo los de ciertos grados", "otro"]
+      - input "¿Qué programas informáticos educativos se usan en los laptops?", ["programas estándar (Windows, Office)", "aplicaciones y contenidos educativos específicos", "juegos y contenidos recreativos", "otro"]
+      - input "¿Necesitan conexión a internet?", ["si permanente", "solo para ciertas funciones", "no necesitan conexión", "otro"]
+      - input "¿Se nota un, mayor  interés o mejor nivel educativo, desde que se usan los laptops en la escuela?", ["mayor nivel de preparación", "mayor interés y motivación", "ninguna mejora", "otro"]
 
     %section
       %h1 Efectos en la Salud
-      - input "¿Se han podido instalar convenientemente la refrigeradora para uso sanitario y el purificador de agua? ["en el centro de salud", "en otro edificio", "no se han instalados", "otro"], tag: :area
-      - input "¿Es la refrigeradora utilizada?" ["para la conservación de vacunas y medicamentos", "para la conservación de otros productos", "no es utilizada", "otro"], tag: :area
-      - input "¿Qué efectos han sido observados gracias al uso de estos aparatos?", ["acceso a medicamentos mayor", "menores enfermedades", "mejora de la salud", "otro"}, tag: :area
+      - input "¿Se han podido instalar convenientemente la refrigeradora para uso sanitario y el purificador de agua?", ["en el centro de salud", "en otro edificio", "no se han instalados", "otro"]
+      - input "¿Es la refrigeradora utilizada?", ["para la conservación de vacunas y medicamentos", "para la conservación de otros productos", "no es utilizada", "otro"]
+      - input "¿Qué efectos han sido observados gracias al uso de estos aparatos?", ["acceso a medicamentos mayor", "menores enfermedades", "mejora de la salud", "otro"]
 
     %section
       %h1 Efectos en desarrollo socioeconómico
