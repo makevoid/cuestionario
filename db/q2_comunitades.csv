@@ -1,4 +1,3 @@
-PAIS,Departamento,Municipio,Comunidad
 BOLIVIA ,CHUQUISACA ,VILLA VACA GUZMAN(MUYUPAMPA) ,GUEMBE
 BOLIVIA ,CHUQUISACA ,VILLA VACA GUZMAN(MUYUPAMPA) ,LA TAPERA
 BOLIVIA ,CHUQUISACA ,PADILLA ,T ABACAL
@@ -168,7 +167,7 @@ GUATEMALA ,Alta Verapaz Norte ,Coban ,Rokja Satzac
 GUATEMALA ,Alta Verapaz Norte ,Coban ,San Lucas Samox
 GUATEMALA ,Alta Verapaz Norte ,Coban ,Yiquiche Canau
 GUATEMALA ,Alta Verapaz Norte ,Fray Bartolomé de las Casas ,Aldea Caxlampon
-GUATEMALA GUATEMALA ,Alta Verapaz Norte Alta Verapaz Norte ,Fray Bartolomé de las Casas Panzós ,RaxaháAldea San Marcos
+GUATEMALA ,Alta Verapaz Norte ,Fray Bartolomé de las Casas Panzós ,RaxaháAldea San Marcos
 GUATEMALA ,Alta Verapaz Norte ,Panzós ,Caserío Raxon San Marcos
 GUATEMALA ,Alta Verapaz Norte ,Panzós ,Caserío Porvenir II
 GUATEMALA ,Alta Verapaz Norte ,Panzós ,Parcelamiento Vista Hermosa
@@ -191,18 +190,18 @@ GUATEMALA ,Baja Verapaz Centro ,Purulha ,Caserío La Nueva Esperanza
 GUATEMALA ,Baja Verapaz Centro ,Purulha ,Cumbre Sacsamani
 GUATEMALA ,Baja Verapaz Centro ,Purulha ,Jalaute Cementerio
 GUATEMALA ,Chiquimula Oriente ,Camotán ,Caserío El Zarzal
-GUATEMALA GUATEMALA ,Chiquimula Oriente Chiquimula Oriente ,Esquipulas Esquipulas ,Aldea Los Horcones Caserío El Duraznal
+GUATEMALA ,Chiquimula Oriente ,Esquipulas Esquipulas ,Aldea Los Horcones Caserío El Duraznal
 GUATEMALA ,Chiquimula Oriente ,Esquipulas ,Caserío El Mojón
 GUATEMALA ,Chiquimula Oriente ,Esquipulas ,Caserío La Cuestona
 GUATEMALA ,Chiquimula Oriente ,Esquipulas ,La Granadilla
 GUATEMALA ,Huehuetenango Occidente ,Chiantla ,Caserío Escapuxzi
 GUATEMALA ,Huehuetenango Occidente ,Chiantla ,Caserío los Pozos
 GUATEMALA ,Huehuetenango Occidente ,Chiantla ,Las Majadas
-GUATEMALA GUATEMALA ,Huehuetenango Occidente Huehuetenango Occidente ,Malacancito San Juan Ixcoy ,Xepon Chiquito Aldea Ocheval
+GUATEMALA ,Huehuetenango Occidente ,Malacancito San Juan Ixcoy ,Xepon Chiquito Aldea Ocheval
 GUATEMALA ,Huehuetenango Occidente ,San Mateo Ixtatán ,Aldea Nuevo Triunfo
 GUATEMALA ,Huehuetenango Occidente ,San Mateo Ixtatán ,Pojóm
 GUATEMALA ,Huehuetenango Occidente ,Santa Cruz Barillas ,Aldea Centinela Grande
-GUATEMALA GUATEMALA ,Huehuetenango Occidente Huehuetenango Occidente ,Santa Cruz Barillas Santa Cruz Barillas ,Aldea Cocolá Grande Aldea Jordán
+GUATEMALA ,Huehuetenango Occidente ,Santa Cruz Barillas Santa Cruz Barillas ,Aldea Cocolá Grande Aldea Jordán
 GUATEMALA ,Izabal Nor-Oriente ,El Estor ,Aldea Chapin Abajo
 GUATEMALA ,Izabal Nor-Oriente ,El Estor ,Aldea Sexan Lote 11
 GUATEMALA ,Izabal Nor-Oriente ,El Estor ,Caserío Balandra
@@ -223,9 +222,9 @@ GUATEMALA ,Peten Norte ,La Libertad ,Caserío Nueva Vista Hermosa
 GUATEMALA ,Peten Norte ,La Libertad ,Caserío Tamariz Las Vegas
 GUATEMALA ,Peten Norte ,La Libertad ,Comunidad La Pista km 35
 GUATEMALA ,Peten Norte ,San Andrés ,Aldea Carmelita
-GUATEMALA GUATEMALA ,Peten Norte Peten Norte ,San Andrés San Andrés ,Aldea Paso Caballos EN ANALISIS
+GUATEMALA ,Peten Norte ,San Andrés San Andrés ,Aldea Paso Caballos EN ANALISIS
 GUATEMALA ,Peten Norte ,San Andrés ,Caserío Cruce La Colorada
-GUATEMALA GUATEMALA ,Peten Norte Peten Norte ,San Andrés San Andrés ,EN ANALISISCaserío Cruce Santa Amelia
+GUATEMALA ,Peten Norte ,San Andrés San Andrés ,EN ANALISISCaserío Cruce Santa Amelia
 GUATEMALA ,Peten Norte ,San Andrés ,Caserío Rey Balantun
 GUATEMALA ,Peten Norte ,San Andrés ,La Unión Laguna Perdida
 GUATEMALA ,Peten Norte ,San Andrés ,San Antonio las Brisas
@@ -240,9 +239,9 @@ GUATEMALA ,Quiche Occidente ,Chicamán ,Aldea El Pajuil
 GUATEMALA ,Quiche Occidente ,Chicamán ,Aldea la Campana
 GUATEMALA ,Quiche Occidente ,Chicamán ,Aldea Pajales
 GUATEMALA ,Quiche Occidente ,Chicamán ,Aldea Rosario Monte María
-GUATEMALA GUATEMALA ,Quiche Occidente Quiche Occidente ,Chicamán Joyabaj ,Aldea Sacrabina Lote 3 Caserío Xepepen
+GUATEMALA ,Quiche Occidente ,Chicamán Joyabaj ,Aldea Sacrabina Lote 3 Caserío Xepepen
 GUATEMALA ,Quiche Occidente ,Joyabaj ,Nimchaj
-GUATEMALA GUATEMALA ,Quiche Occidente Quiche Occidente ,Joyabaj Nebaj ,XeojAldea Las Brisas
+GUATEMALA ,Quiche Occidente ,Joyabaj Nebaj ,XeojAldea Las Brisas
 GUATEMALA ,Quiche Occidente ,Nebaj ,Aldea Santa Marta
 GUATEMALA ,Quiche Occidente ,Uspantán ,Aldea el Teroso 9 de marzo
 GUATEMALA ,Quiche Occidente ,Uspantán ,Aldea La Taña
