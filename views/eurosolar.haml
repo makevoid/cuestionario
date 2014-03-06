@@ -1,21 +1,35 @@
 :ruby
   # encoding: utf-8
-  # PAIS, Departamento, Municipio, Comunidad
-  csv = File.read "db/q2_comunitades.csv"
+  # pais, departamento, municipio, comunidad
+  #csv = File.read "db/q2_comunitades.csv"
+  csv = CSV.read "db/q2_comunitades.csv", headers: true
+  countries = csv["pais"].uniq.map{ |p| p.capitalize }
+  country = params[:pais] || countries.first
+  departments = csv.select{ |c| c["pais"].downcase == country.downcase  }.map{ |row| row["departamento"] }.uniq
+  department = params[:department] || departments.first
+  municipalities = csv.select{ |c| c["departamento"] == department  }.map{ |row| row["municipio"] }.uniq
+  municipality = params[:municipality] || municipalities.first
+  communities = csv.select{ |c| c["municipio"] == municipality  }.map{ |row| row["comunidad"] }.uniq
+  community = params[:community] || communities.first
 
-
-%form{ action: "/submit", method: :post }
+-#%form{ action: "/eurosolar", method: :get }
+%form{ action: "/eurosolar/submit", method: :post }
   %h1 CUESTIONARIO DIRIGIDO A LAS COMUNIDADES BENEFICIARIAS DEL PROGRAMA EUROSOLAR
 
   %section
     %h1 GENERAL
-    - input "País", name: :pais
-    - input "Departamento", name: :department
-    - input "Municipio", name: :municipio
-    - input "Nombre de la Comunidad", name: :nombre_comunidad
+    - select_def "País", countries, country, name: :pais
+    - select_def "Departamento", departments, department, name: :department
+    - select_def "Municipio", municipalities, municipality, name: :municipality
+    - input "Nombre de la Comunidad", communities, name: :nombre_comunidad
     - input "Nombre  de la persona que responde al cuestionario", name: :nombre
     - input "Cargo en la Comunidad en relación al Programa EUROSOLAR", name: :cargo
-
+    :javascript
+      $("[name=pais],[name=department],[name=municipality]").on("change", function(){
+        $("form").attr("method", "get")
+        $("form").attr("action", "/eurosolar")
+        $("form").submit()
+      })
 
   %section
     %h1

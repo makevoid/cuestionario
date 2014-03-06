@@ -47,6 +47,17 @@ class Cuestionario < Sinatra::Base
       end
     end
 
+    def select_def(label, choices, sel_choice, options)
+      tag :select, options do
+        choices.each do |choice|
+          selected = true if choice == sel_choice
+          tag :option, selected: selected do
+            write choice
+          end
+        end
+      end
+    end
+
     def input(label, options={}, options2={})
       tag :label do
         write label
@@ -95,6 +106,12 @@ class Cuestionario < Sinatra::Base
     Answers.instance << params
     Answers.instance.write
     haml :success
+  end
+
+  post "/eurosolar/submit" do
+    EuroAnswers.instance << params
+    EuroAnswers.instance.write
+    haml :success_eurosolar
   end
 
   get "/exception" do

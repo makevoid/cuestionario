@@ -41,4 +41,15 @@ class Answers < DB
 
 end
 
-# Answers
+class EuroAnswers < DB
+
+  def self.instance
+    @@instance ||= new
+  end
+
+  def initialize
+    @db_name = "eurosolar"
+    read
+  end
+
+end
