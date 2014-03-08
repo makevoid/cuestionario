@@ -1,8 +1,8 @@
 :ruby
   # encoding: utf-8
   # pais, departamento, municipio, comunidad
-  #csv = File.read "db/q2_comunitades.csv"
-  csv = CSV.read "db/q2_comunitades.csv", headers: true
+  #csv = File.read "config/q2_comunitades.csv"
+  csv = CSV.read "config/q2_comunitades.csv", headers: true
   countries = csv["pais"].uniq.map{ |p| p.capitalize }
   country = params[:pais] || countries.first
   departments = csv.select{ |c| c["pais"].downcase == country.downcase  }.map{ |row| row["departamento"] }.uniq
