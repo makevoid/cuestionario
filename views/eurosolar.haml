@@ -2,14 +2,16 @@
   # encoding: utf-8
   # pais, departamento, municipio, comunidad
   #csv = File.read "config/q2_comunitades.csv"
-  csv = CSV.read "config/q2_comunitades.csv", headers: true
-  countries = csv["pais"].uniq.map{ |p| p.capitalize }
+  #csv = CSV.read "config/q2_comunitadesB.csv", headers: true
+  csv = CSV.read "config/q2_comunitadesB.csv", headers: true, col_sep: ";"
+  #raise csv["pais"].uniq.inspect
+  countries = csv["pais"].uniq.map{ |p| p.capitalize }.sort
   country = params[:pais] || countries.first
-  departments = csv.select{ |c| c["pais"].downcase == country.downcase  }.map{ |row| row["departamento"] }.uniq
+  departments = csv.select{ |c| c["pais"].downcase == country.downcase  }.map{ |row| row["departamento"] }.uniq.sort
   department = params[:department] || departments.first
-  municipalities = csv.select{ |c| c["departamento"] == department  }.map{ |row| row["municipio"] }.uniq
+  municipalities = csv.select{ |c| c["departamento"] == department  }.map{ |row| row["municipio"] }.uniq.sort
   municipality = params[:municipality] || municipalities.first
-  communities = csv.select{ |c| c["municipio"] == municipality  }.map{ |row| row["comunidad"] }.uniq
+  communities = csv.select{ |c| c["municipio"] == municipality  }.map{ |row| row["comunidad"] }.uniq.sort
   community = params[:community] || communities.first
 
 -#%form{ action: "/eurosolar", method: :get }
