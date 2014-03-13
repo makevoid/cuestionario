@@ -40,97 +40,98 @@
 
     %section
       %h1 Pertinencia institucional
-      - input "Cuál fue la respuesta de la comunidad cuando se les invitó a participar en el proyecto?", ["hubo resistencia", "trataron de colaborar", "otro"]
-      - input "Otro (especificar)"
+      - input "Cuál fue la respuesta de la comunidad cuando se les invitó a participar en el proyecto?", ["hubo resistencia", "trataron de colaborar", "otro"], name: :pertinencia
+
+      - input "Otro (especificar)", name: :pertinencia_otro
 
 
     %section
       %h1 Pertinencia geográfica
       - input "En su opinión para la Comunidad el Programa EUROSOLAR tenía como objetivo?", ["llevar energía a la comunidad", "mejorar la educación y la salud", "mejorar la comunicación con el exterior", "generar ingreso y recursos", "otro"]
-      - input "Otro (especificar)"
+      - input "Otro (especificar)", name: :pertinencia_geo
       - input "Porqué razones fue seleccionada su comunidad como beneficiaria del programa EUROSOLAR?", ["no tiene energía", "está muy aislada", "había un fuerte compromiso de la gente", "otro"]
-      - input "Otro (especificar)"
+      - input "Otro (especificar)", name: :pertinencia_geo_otro
     %section
       %h1 Pertinencia operativa
-      - input "En su opinión la calidad del equipamiento instalado en su comunidad es?", ["muy adecuada", "bastante adecuada", "poco adecuada", "inadecuada"]
+      - input "En su opinión la calidad del equipamiento instalado en su comunidad es?", ["muy adecuada", "bastante adecuada", "poco adecuada", "inadecuada"], name: :pertinencia_operativa
     %section
       %h1 Temas transversales
-      - input "Desde el principio participaron tanto mujeres como hombres de la comunidad en el proyecto?", ["solo hombres", "mayormente hombres", "hombres y mujeres", "mayormente mujeres", "otro"]
-      - input "Otro (especificar)"
+      - input "Desde el principio participaron tanto mujeres como hombres de la comunidad en el proyecto?", ["solo hombres", "mayormente hombres", "hombres y mujeres", "mayormente mujeres", "otro"], name: :temas_trasversales
+      - input "Otro (especificar)", name: :temas_trasversales_otro
     %section
       %h1 Previsión de la sostenibilidad
-      - input "La comunidad tenía claro desde el inicio del proyecto de donde procederían los medios para que los equipos duraran en el tiempo?", ["del estado", "de los municipios", "de la misma comunidad", "otro"]
-      - input "Otro (especificar)"
+      - input "La comunidad tenía claro desde el inicio del proyecto de donde procederían los medios para que los equipos duraran en el tiempo?", ["del estado", "de los municipios", "de la misma comunidad", "otro"], name: :sostenibilidad
+      - input "Otro (especificar)", name: :sostenibilidad_otro
 
   %section
     %h1
       EFICIENCIA
       %span Eficiencia en la ejecución local
 
-    - input "Los habitantes de la comunidad fueron informados  de la utilidad del proyecto al inicio?", ["suficientemente", "parcialmente", "poco", "nada"]
-    - input "Cómo ha sido la capacitación que han recibido en la Comunidad para el manejo de los equipos?", ["suficiente", "a penas suficiente", "insuficiente", "no ha habido capacitación"]
-    - input "Cómo se realizó la conexión a internet?", ["por antena sateltal", "por la linea de teléfono movil", "no ha habido conexión", "otro"]
-    - input "Otro (especificar)"
-    - input "La comunidad participó en los trabajos de construcción para poner en funcionamiento el kit EUROSOLAR?", ["en la adecuación de los edificios", "en la provisión del mobiliario", "en la instalación de los equipos", "no se participó", "otro"]
-    - input "Otro (especificar)"
-    - input "Se organizó en la Comunidad algún tipo de comité de coordinación para dar seguimiento a las actividades del proyecto?", ["si, desde antes de la instalación de los equipos", "si, después de la instalación de los equipos", "no se organizó ningún comité", "otro"]
-    - input "Otro (especificar)"
-    - input "Quienes formaban ese comité de coordinación?", ["solamente los docentes de la escuela", "docentes y padres de fiamila", "varios integrantes de la comunidad", "otro"]
-    - input "Otro (especificar)"
+    - input "Los habitantes de la comunidad fueron informados  de la utilidad del proyecto al inicio?", ["suficientemente", "parcialmente", "poco", "nada"], name: :eficencia1
+    - input "Cómo ha sido la capacitación que han recibido en la Comunidad para el manejo de los equipos?", ["suficiente", "a penas suficiente", "insuficiente", "no ha habido capacitación"], name: :eficencia1_otro
+    - input "Cómo se realizó la conexión a internet?", ["por antena sateltal", "por la linea de teléfono movil", "no ha habido conexión", "otro"], name: :eficencia2
+    - input "Otro (especificar)", name: :eficencia2_otro
+    - input "La comunidad participó en los trabajos de construcción para poner en funcionamiento el kit EUROSOLAR?", ["en la adecuación de los edificios", "en la provisión del mobiliario", "en la instalación de los equipos", "no se participó", "otro"], name: :eficencia3
+    - input "Otro (especificar)", name: :eficencia3_otro
+    - input "Se organizó en la Comunidad algún tipo de comité de coordinación para dar seguimiento a las actividades del proyecto?", ["si, desde antes de la instalación de los equipos", "si, después de la instalación de los equipos", "no se organizó ningún comité", "otro"], name: :eficencia4
+    - input "Otro (especificar)", name: :eficencia4_otro
+    - input "Quienes formaban ese comité de coordinación?", ["solamente los docentes de la escuela", "docentes y padres de fiamila", "varios integrantes de la comunidad", "otro"], name: :eficencia5
+    - input "Otro (especificar)", name: :eficencia5_otro
 
   %section
     %h1
       EFICACIA
 
-    - input "En su opinión ¿a qué aspecto ha contribuido más el kit instalado en la Comunidad?", ["mejora de la educación", "de las condiciones de salud", "de la comunicación de la comunidad con el exterior", "a generar oportunidades de ingreso", "otro"]
-    - input "Otro (especificar)"
+    - input "En su opinión ¿a qué aspecto ha contribuido más el kit instalado en la Comunidad?", ["mejora de la educación", "de las condiciones de salud", "de la comunicación de la comunidad con el exterior", "a generar oportunidades de ingreso", "otro"], name: :eficacia
+    - input "Otro (especificar)", name: :eficacia_otro
 
     %section
       %h1 Efectos en la Educación
-      - input "¿Para qué  actividades educativas se utilizan los laptops?", ["para los cursos ordinarios", "para investigaciones y profundizaciones", "para la información", "para el juego y la recreación", "otro"]
-      - input "Otro (especificar)"
-      - input "¿Están siendo todos utilizados?", ["todo el tiempo", "solamente durante ciertos días y horas", "muy esporádicamente", "nunca", "otro"]
-      - input "Otro (especificar)"
-      - input "¿Están conectados a internet?", ["están conectados con frecuencia", "están conectados esporádicamente", "estuvieron conectados pero ya no", "nunca estuvieron conectados", "otro"]
-      - input "Otro (especificar)"
-      - input "¿Cuántos son los alumnos que utilizan los laptops?", ["todos los alumnos de la escuela", "solo los de ciertos grados", "otro"]
-      - input "Otro (especificar)"
-      - input "¿Qué programas informáticos educativos se usan en los laptops?", ["programas estándar (Windows, Office)", "aplicaciones y contenidos educativos específicos", "juegos y contenidos recreativos", "otro"]
-      - input "Otro (especificar)"
-      - input "¿Necesitan conexión a internet?", ["si permanente", "solo para ciertas funciones", "no necesitan conexión", "otro"]
-      - input "Otro (especificar)"
-      - input "¿Se nota un, mayor  interés o mejor nivel educativo, desde que se usan los laptops en la escuela?", ["mayor nivel de preparación", "mayor interés y motivación", "ninguna mejora", "otro"]
-      - input "Otro (especificar)"
+      - input "¿Para qué  actividades educativas se utilizan los laptops?", ["para los cursos ordinarios", "para investigaciones y profundizaciones", "para la información", "para el juego y la recreación", "otro"], name: :efectos1
+      - input "Otro (especificar)", name: :efectos1_otro
+      - input "¿Están siendo todos utilizados?", ["todo el tiempo", "solamente durante ciertos días y horas", "muy esporádicamente", "nunca", "otro"], name: :efectos2
+      - input "Otro (especificar)", name: :efectos2_otro
+      - input "¿Están conectados a internet?", ["están conectados con frecuencia", "están conectados esporádicamente", "estuvieron conectados pero ya no", "nunca estuvieron conectados", "otro"], name: :efectos3
+      - input "Otro (especificar)", name: :efectos3_otro
+      - input "¿Cuántos son los alumnos que utilizan los laptops?", ["todos los alumnos de la escuela", "solo los de ciertos grados", "otro"], name: :efectos4
+      - input "Otro (especificar)", name: :efectos4_otro
+      - input "¿Qué programas informáticos educativos se usan en los laptops?", ["programas estándar (Windows, Office)", "aplicaciones y contenidos educativos específicos", "juegos y contenidos recreativos", "otro"], name: :efectos5
+      - input "Otro (especificar)", name: :efectos5_otro
+      - input "¿Necesitan conexión a internet?", ["si permanente", "solo para ciertas funciones", "no necesitan conexión", "otro"], name: :efectos6
+      - input "Otro (especificar)", name: :efectos6_otro
+      - input "¿Se nota un, mayor  interés o mejor nivel educativo, desde que se usan los laptops en la escuela?", ["mayor nivel de preparación", "mayor interés y motivación", "ninguna mejora", "otro"], name: :efectos7
+      - input "Otro (especificar)", name: :efectos7_otro
 
     %section
       %h1 Efectos en la Salud
-      - input "¿Se han podido instalar convenientemente la refrigeradora para uso sanitario y el purificador de agua?", ["en el centro de salud", "en otro edificio", "no se han instalados", "otro"]
-      - input "Otro (especificar)"
-      - input "¿Es la refrigeradora utilizada?", ["para la conservación de vacunas y medicamentos", "para la conservación de otros productos", "no es utilizada", "otro"]
-      - input "Otro (especificar)"
-      - input "¿Qué efectos han sido observados gracias al uso de estos aparatos?", ["acceso a medicamentos mayor", "menores enfermedades", "mejora de la salud", "otro"]
-      - input "Otro (especificar)"
+      - input "¿Se han podido instalar convenientemente la refrigeradora para uso sanitario y el purificador de agua?", ["en el centro de salud", "en otro edificio", "no se han instalados", "otro"], name: :efectos_salud1
+      - input "Otro (especificar)", name: :efectos_salud1_otro
+      - input "¿Es la refrigeradora utilizada?", ["para la conservación de vacunas y medicamentos", "para la conservación de otros productos", "no es utilizada", "otro"], name: :efectos_salud2
+      - input "Otro (especificar)", name: :efectos_salud2_otro
+      - input "¿Qué efectos han sido observados gracias al uso de estos aparatos?", ["acceso a medicamentos mayor", "menores enfermedades", "mejora de la salud", "otro"], name: :efectos_salud3
+      - input "Otro (especificar)", name: :efectos_salud3_otro
 
     %section
       %h1 Efectos en desarrollo socioeconómico
-      - input "¿Gracias al kit Eurosolar se han podido arrancar proyectos de generación de ingresos en la comunidad?", ["planes de negocio", "búsqueda de mercados", "servicios de fotocopias, teléfono, faxes", "recarga de baterías", "otro"]
-      - input "Otro (especificar)"
-      - input "¿Son estas iniciativas llevadas de forma comunitaria por toda la comunidad o por algunos individuos o grupos?", ["toda la comunidad", "el comité", "un grupo de personas", "otro"]
-      - input "Otro (especificar)"
+      - input "¿Gracias al kit Eurosolar se han podido arrancar proyectos de generación de ingresos en la comunidad?", ["planes de negocio", "búsqueda de mercados", "servicios de fotocopias, teléfono, faxes", "recarga de baterías", "otro"], name: :desarrollo1
+      - input "Otro (especificar)", name: :desarrollo1_otro
+      - input "¿Son estas iniciativas llevadas de forma comunitaria por toda la comunidad o por algunos individuos o grupos?", ["toda la comunidad", "el comité", "un grupo de personas", "otro"], name: :desarrollo2
+      - input "Otro (especificar)", name: :desarrollo2_otro
 
     %section
       %h1 Efectos energéticos
-      - input "¿Gracias al kit Eurosolar se han podido realizar actividades recreativas en la comunidad?", ["actividades con alumbrado público", "proyecciones", "otro"]
-      - input "Otro (especificar)"
-      - input "¿Conocen de otras experiencias en la zona que hayan tomado el ejemplo de su comunidad y hayan instalado placas solares?", ["si hubo replicación",  "no hubo ninguna replicación", "otro"]
-      - input "Otro (especificar)"
-      - input "¿Cuál es el grado de interés de otras comunidades en la experiencia de su comunidad?", ["si hubo interés pero ninguna realización hasta el momento", "nadie manifestó interés", "otro"]
-      - input "Otro (especificar)"
+      - input "¿Gracias al kit Eurosolar se han podido realizar actividades recreativas en la comunidad?", ["actividades con alumbrado público", "proyecciones", "otro"], name: :energeticos1
+      - input "Otro (especificar)", name: :energeticos1_otro
+      - input "¿Conocen de otras experiencias en la zona que hayan tomado el ejemplo de su comunidad y hayan instalado placas solares?", ["si hubo replicación",  "no hubo ninguna replicación", "otro"], name: :energeticos2
+      - input "Otro (especificar)", name: :energeticos2_otro
+      - input "¿Cuál es el grado de interés de otras comunidades en la experiencia de su comunidad?", ["si hubo interés pero ninguna realización hasta el momento", "nadie manifestó interés", "otro"], name: :energeticos3
+      - input "Otro (especificar)", name: :energeticos3_otro
 
   %section
     %h1 IMPACTO
-    - input "Qué efectos generales ha tenido el proyecto para la mejora de la calidad de la vida de la Comunidad?", ["hay una mejor educación para los niños y jovenes", "hay mejores condicones de salud", "hay más fuentes de ingreso", "hay mejor comunicación", "otro"]
-    - input "Otro (especificar)"
+    - input "Qué efectos generales ha tenido el proyecto para la mejora de la calidad de la vida de la Comunidad?", ["hay una mejor educación para los niños y jovenes", "hay mejores condicones de salud", "hay más fuentes de ingreso", "hay mejor comunicación", "otro"], name: :impacto
+    - input "Otro (especificar)", name: :impacto_otro
 
 
   %section
@@ -139,40 +140,41 @@
 
     %section
       %h1 Sostenibilidad institucional
-      - input "Que autoridades acompañan y apoyan ahora a la Comunidad para mantener el equipo?", ["instituciones del estado", "municipio", "otro proyecto", "ningún apoyo", "otro"]
-      - input "Otro (especificar)"
+      - input "Que autoridades acompañan y apoyan ahora a la Comunidad para mantener el equipo?", ["instituciones del estado", "municipio", "otro proyecto", "ningún apoyo", "otro"], name: :sost_inst
+      - input "Otro (especificar)", name: :sost_inst_otro
 
     %section
       %h1 Sostenibilidad social
-      - input "¿Quién forma parte ahora de la organización de la comunidad encargada del kit Eurosolar?", ["profesores o maestros", "padres de familia", "otros miembros de la comunidad",  "otro"]
-      - input "¿Quienes son, entre los miembros de la comunidad, los que apoyan mayormente las actividades relacionadas con la instalación de Eurosolar", ["los alumnos", "otros jóvenes", "los enseñantes", "los padres de familia", "los microempresarios?"]
-      - input "¿Cuál es la participación de las, niñas  jóvenes y señoras en el uso de las instalaciones de Eurosolar?", ["muy elevada", "regular", "poca", "otro"]
-      - input "Otro (especificar)"
+      - input "¿Quién forma parte ahora de la organización de la comunidad encargada del kit Eurosolar?", ["profesores o maestros", "padres de familia", "otros miembros de la comunidad",  "otro"], name: :sost_social1
+      - input "Otro (especificar)", name: :sost_social1_otro
+      - input "¿Quienes son, entre los miembros de la comunidad, los que apoyan mayormente las actividades relacionadas con la instalación de Eurosolar", ["los alumnos", "otros jóvenes", "los enseñantes", "los padres de familia", "los microempresarios?"], name: :sost_social2
+      - input "¿Cuál es la participación de las, niñas  jóvenes y señoras en el uso de las instalaciones de Eurosolar?", ["muy elevada", "regular", "poca", "otro"], name: :sost_social3
+      - input "Otro (especificar)", name: :sost_social3_otro
 
     %section
       %h1 Sostenibilidad técnica
-      - input "¿Están funcionando bien los equipos?", ["si, todos funcionan bien", "algunos han sido robados", "algunos son dañados", "muy pocos funcionan", "ninguno funciona", "otro"]
-      - input "Otro (especificar)"
-      - input "¿Tienen conexión a internet?", ["todas las laptops están conectadas", "solo algunas están conectadas", "estuvieron conectadas pero ya no", "ninguna está conectada", "otro"]
-      - input "Otro (especificar)"
-      - input "¿La comunidad está responsabilizada en el mantenimiento de los equipos?", ["si, la organización comunitaria se encarga de la operación y mantenimiento", "cuando hay fallos graves pedimos asistencia externa", "las autoridades intervienen regularmente", "nadie hace mantenimiento", "otro"]
-      - input "Otro (especificar)"
+      - input "¿Están funcionando bien los equipos?", ["si, todos funcionan bien", "algunos han sido robados", "algunos son dañados", "muy pocos funcionan", "ninguno funciona", "otro"], name: :sost_tecn1
+      - input "Otro (especificar)", name: :sost_tecn1_otro
+      - input "¿Tienen conexión a internet?", ["todas las laptops están conectadas", "solo algunas están conectadas", "estuvieron conectadas pero ya no", "ninguna está conectada", "otro"], name: :sost_tecn2
+      - input "Otro (especificar)", name: :sost_tecn2_otro
+      - input "¿La comunidad está responsabilizada en el mantenimiento de los equipos?", ["si, la organización comunitaria se encarga de la operación y mantenimiento", "cuando hay fallos graves pedimos asistencia externa", "las autoridades intervienen regularmente", "nadie hace mantenimiento", "otro"], name: :sost_tecn3
+      - input "Otro (especificar)", name: :sost_tecn3_otro
 
     %section
       %h1 Sostenibilidad financiera
-      - input "¿Qué autoridades están dando apoyo económico para mantener el equipo e instalaciones?", ["instituciones del estado", "municipio", "otro proyecto", "ningún apoyo", "otro"]
-      - input "Otro (especificar)"
-      - input "¿Se generan fondos propios a partir de la utilización de los equipos en la Comunidad?", ["bastantes, más de los que se necesitan para mantenimiento", "sufiencientes para el mantenimiento", "insuficientes para el mantenimiento", "no se genera ningún fondo", "otro"]
-      - input "Otro (especificar)"
-      - input "¿Quien paga el servicio de internet?", ["instituciones del estado", "servicio gratuito de la empresa de telecomunicaciones", "municipio", "otro proyecto", "la propia comunidad", "ningún pago", "otro"]
-      - input "Otro (especificar)"
+      - input "¿Qué autoridades están dando apoyo económico para mantener el equipo e instalaciones?", ["instituciones del estado", "municipio", "otro proyecto", "ningún apoyo", "otro"], name: :sost_fin1
+      - input "Otro (especificar)", name: :sost_fin1_otro
+      - input "¿Se generan fondos propios a partir de la utilización de los equipos en la Comunidad?", ["bastantes, más de los que se necesitan para mantenimiento", "sufiencientes para el mantenimiento", "insuficientes para el mantenimiento", "no se genera ningún fondo", "otro"], name: :sost_fin2
+      - input "Otro (especificar)", name: :sost_fin2_otro
+      - input "¿Quien paga el servicio de internet?", ["instituciones del estado", "servicio gratuito de la empresa de telecomunicaciones", "municipio", "otro proyecto", "la propia comunidad", "ningún pago", "otro"], name: :sost_fin3
+      - input "Otro (especificar)", name: :sost_fin3_otro
 
     %section
       %h1 Sostenibilidad ambiental
-      - input "¿Han contribuido los contenidos de la información y formación vía internet al aumento de la concientización en favor de la conservación del medio ambiente?", ["han contribuido en la concientización e información", "no han contribuido", "otro"]
-      - input "Otro (especificar)"
-      - input "¿si han tenido que reemplazar baterías o piezas de equipo, como las han tratadas?", ["puesta de lado en la comunidad", "tirada en la basura", "enviada para reciclaje", "otro"]
-      - input "Otro (especificar)"
+      - input "¿Han contribuido los contenidos de la información y formación vía internet al aumento de la concientización en favor de la conservación del medio ambiente?", ["han contribuido en la concientización e información", "no han contribuido", "otro"], name: :sost_amb1
+      - input "Otro (especificar)", name: :sost_amb1_otro
+      - input "¿si han tenido que reemplazar baterías o piezas de equipo, como las han tratadas?", ["puesta de lado en la comunidad", "tirada en la basura", "enviada para reciclaje", "otro"], name: :sost_amb2
+      - input "Otro (especificar)", name: :sost_amb2_otro
 
   %input{ type: :hidden, name: :start_time, value: Time.now.to_s }
 
